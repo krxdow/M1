@@ -8,13 +8,16 @@ public class Client {
 
         String host = (args.length < 1) ? null : args[0];
         try {
-            Registry registry = LocateRegistry.getRegistry(null);
+            //same port as server
+            Registry registry = LocateRegistry.getRegistry(1105);
 
             //search in regisry
             Animal stub = (Animal) registry.lookup("Animal");
 
             //call remote methode
-            stub.printAnimal();
+            //stub.printAnimal();
+
+            stub.test();
 
 
         } catch (Exception e) {

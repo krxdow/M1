@@ -5,6 +5,8 @@ public interface Animal extends Remote {
 
     public void printAnimal() throws RemoteException;
 
+    public void test() throws RemoteException;
+
     public String getName() throws  RemoteException;
 
     public void setName(String name) throws  RemoteException;

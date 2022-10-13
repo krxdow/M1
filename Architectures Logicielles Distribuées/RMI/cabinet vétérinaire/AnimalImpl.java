@@ -20,7 +20,6 @@ protected AnimalImpl() throws RemoteException {
         this.race = race;
     }
 
-
     public String getName() {
         return name;
     }
@@ -54,12 +53,15 @@ protected AnimalImpl() throws RemoteException {
         this.race = race;
     }
 
+
+    public void test() {
+    System.out.println("the remote object is well distributed");
+    }
+
     @Override
     public void printAnimal() throws RemoteException {
     System.out.println(getName()+' '+getEspece()+' '+getNameMaster()+' '+getRace());
     }
-
-
 
 
 }
