@@ -6,7 +6,6 @@ public class Server {
     public Server(){}
     public static void main(String[] args)  {
 
-        //System.out.println("Hello world!");
     try {
         AnimalImpl obj= new AnimalImpl();
         //creation de registre par code lancé sur en même temps que sur le svr ; même machine virtuelle
@@ -23,7 +22,7 @@ public class Server {
 
 
     }catch (Exception e) {
-        System.err.println("Server exception: " + e.toString());
+        System.err.println("Server exception: " + e);
         e.printStackTrace();
     }
 

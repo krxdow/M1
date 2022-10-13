@@ -2,11 +2,10 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 //import rmi.commons.workflow.IObjetDistant;
 
-
-public class AnimalImpl extends UnicastRemoteObject implements Animal{
+ public class AnimalImpl extends UnicastRemoteObject implements Animal{
 
     private String name;
-    private String masterOfName;
+    private String nameMaster;
     private String espece;
     private String race;
 
@@ -16,11 +15,10 @@ public class AnimalImpl extends UnicastRemoteObject implements Animal{
 protected AnimalImpl() throws RemoteException {
 
     this.name = name;
-        this.masterOfName = masterOfName;
+        this.nameMaster = nameMaster;
         this.espece = espece;
         this.race = race;
     }
-
 
 
     public String getName() {
@@ -31,15 +29,16 @@ protected AnimalImpl() throws RemoteException {
         this.name = name;
     }
 
-    public String getMasterOfName() {
-        return masterOfName;
+    public String getNameMaster() {
+        return nameMaster;
     }
 
-    public void setMasterOfName(String masterOfName) {
-        this.masterOfName = masterOfName;
+    public Void setNameMaster(String nameMaster){
+        this.nameMaster=nameMaster;
+        return null;
     }
 
-    public String getEspece() {
+     public String getEspece() {
         return espece;
     }
 
@@ -57,7 +56,7 @@ protected AnimalImpl() throws RemoteException {
 
     @Override
     public void printAnimal() throws RemoteException {
-    System.out.println(getName()+' '+getEspece()+' '+getMasterOfName()+' '+getRace());
+    System.out.println(getName()+' '+getEspece()+' '+getNameMaster()+' '+getRace());
     }
 
 
