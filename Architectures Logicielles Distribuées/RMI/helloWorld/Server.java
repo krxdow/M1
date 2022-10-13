@@ -14,7 +14,7 @@ public class Server {
 
 
 			//registre lancé sur en même temps que sur le svr ; même machine virtuelle
-			 Registry registry = LocateRegistry.createRegistry(1105);
+			 Registry registry = LocateRegistry.createRegistry(1106);
 			//Registry registry = LocateRegistry.getRegistry();
 			if (registry==null){
 				System.err.println("RmiRegistry not found");

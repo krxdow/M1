@@ -1,5 +1,7 @@
 package helloWorld;
 
+import helloWorld.Hello;
+
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
@@ -10,11 +12,13 @@ public class Client {
 
 		String host = (args.length < 1) ? null : args[0];
 		try {
-			Registry registry = LocateRegistry.getRegistry(1105);
+			Registry registry = LocateRegistry.getRegistry(1106);
 			Hello stub = (Hello) registry.lookup("Hello");
+
 			String response = stub.sayHello();
 			System.out.println("response: " + response);
-			stub.printHello();
+
+			//stub.printHello();
 		} catch (Exception e) {
 			System.err.println("Client exception: " + e.toString());
 			e.printStackTrace();
