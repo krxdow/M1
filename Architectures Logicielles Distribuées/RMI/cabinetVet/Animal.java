@@ -13,11 +13,13 @@ public interface Animal extends Remote {
 
     public String getNameMaster() throws  RemoteException;
 
-    public Void setNameMaster(String nameMaster) throws  RemoteException;
+    public void setNameMaster(String nameMaster) throws  RemoteException;
 
+/*
     public String getEspece() throws  RemoteException;
 
     public void setEspece(String espece) throws  RemoteException;
+*/
 
     public String getRace() throws  RemoteException;
 

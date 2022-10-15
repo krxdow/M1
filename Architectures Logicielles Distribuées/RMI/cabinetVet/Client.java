@@ -13,10 +13,15 @@ public class Client {
             //search in class in regisry
             Animal stub = (Animal) registry.lookup("Animal");
 
+
+
+            //stub renvoie la ref de l'objet
+            SuiviAnimal stub2 = (SuiviAnimal) registry.lookup("SuiviAnimal") ;
+
             //call remote methode
             //stub.printAnimal();
 
-            String reponse = stub.test();
+          String reponse = stub.test();
             System.out.println("response du serveur"+ reponse);
 
 
