@@ -1,5 +1,7 @@
+import java.rmi.RMISecurityManager;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+
 
 public class Server {
     public Server() {
@@ -7,11 +9,26 @@ public class Server {
 
     public static void main(String[] args) {
 
+
+        try {
+            if (System.getSecurityManager() == null) {
+                System.setSecurityManager(new RMISecurityManager());
+                System.setProperty("java.security.policy", "security.policy");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+
+
         try {
             AnimalImpl obj = new AnimalImpl();
 
             //not need if extend UnicastRemoteObject
             //Animal stub = (Animal) UnicastRemoteObject.exportObject(obj, 0);
+
+            System.setSecurityManager(new SecurityManager());
 
 
             //creation de registre par code lancé sur en même temps que sur le svr ; même machine virtuelle
@@ -31,7 +48,6 @@ public class Server {
             e.printStackTrace();
         }
 
-    }
+    }}
 
 
-}

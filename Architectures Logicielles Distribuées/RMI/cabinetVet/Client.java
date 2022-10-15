@@ -10,7 +10,6 @@ public class Client {
         try {
             //same port as server, search registry local
             Registry registry = LocateRegistry.getRegistry(1105);
-
             //search in class in regisry
             Animal stub = (Animal) registry.lookup("Animal");
 
