@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fca9e39c-743a-4aa2-b651-a56ba717bbaf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../RMI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/RMI/RMI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/RMI/cabinet vétérinaire.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/RMI/cabinetVet/cabinet vétérinaire.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/RMI/helloWorld/helloWorld.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fournis/.idea/fournis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet vétérinaire/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet vétérinaire/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet vétérinaire/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet vétérinaire/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet vétérinaire/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet vétérinaire/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet vétérinaire/AnimalImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet vétérinaire/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet vétérinaire/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet vétérinaire/TP1_RMI.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/TP1_RMI.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet vétérinaire/cabinet vétérinaire.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloWorld/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloWorld/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloWorld/out/production/helloWorld/helloWorld/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/out/production/helloWorld/helloWorld/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fichiers-fournis.tgz" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GAgPhSUNGvcXf3yza7MvqHxyh4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fca9e39c-743a-4aa2-b651-a56ba717bbaf" name="Changes" comment="" />
+      <created>1665836780810</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665836780810</updated>
+      <workItem from="1665836782542" duration="92000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

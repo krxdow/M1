@@ -2,7 +2,7 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 //import rmi.commons.workflow.IObjetDistant;
 
- public class AnimalImpl extends UnicastRemoteObject implements Animal{
+ public class AnimalImpl extends UnicastRemoteObject implements Animal {
 
     private String name;
     private String nameMaster;
@@ -12,7 +12,7 @@ import java.rmi.server.UnicastRemoteObject;
 /*
     //constructeur
 */
-protected AnimalImpl() throws RemoteException {
+public AnimalImpl() throws RemoteException {
 
     this.name = name;
         this.nameMaster = nameMaster;
@@ -54,11 +54,12 @@ protected AnimalImpl() throws RemoteException {
     }
 
 
-    public void test() {
+    public String test() {
     System.out.println("the remote object is well distributed");
+        return null;
     }
 
-    @Override
+    //@Override
     public void printAnimal() throws RemoteException {
     System.out.println(getName()+' '+getEspece()+' '+getNameMaster()+' '+getRace());
     }
