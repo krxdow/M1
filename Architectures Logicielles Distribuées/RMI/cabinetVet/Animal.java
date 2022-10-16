@@ -4,30 +4,36 @@ import java.rmi.server.UnicastRemoteObject;
 
 public class Animal extends UnicastRemoteObject implements IAnimal {
 
-    String nameMaster;
-    // String espece;
-    String race;
-    SuiviAnimal suiviAnimal;
-    String text = null;
-    Espese especeObj;
+    private String nameMaster;
+    private SuiviAnimal suiviAnimal;
+    private String race;
+    private Espece specie;
+    private String name;
 
-    private
-    String name;
-
+    //    private String text = null;
+    //    private // String espece;
 
     /*
         //constructeur
     */
-    public Animal() throws RemoteException {
-
-  
+    public Animal(String name, String nameMaster, Espece specie, String race, String followUp) throws RemoteException {
         this.name = name;
         this.nameMaster = nameMaster;
+        this.specie = specie;
         this.race = race;
         this.suiviAnimal = new SuiviAnimal();
 
-        /*this.epece = new EspeseImpl();*/
-        this.especeObj = new Espese();
+
+    }
+    public Animal(String name, String nameMaster, String specieName, int speciesAverageLife, String race, String followUp) throws RemoteException {
+
+
+        this.name = name;
+        this.nameMaster = nameMaster;
+        this.specie = new Espece(specieName, speciesAverageLife);
+        this.race = race;
+        this.suiviAnimal = new SuiviAnimal();
+
 
     }
 
@@ -67,20 +73,33 @@ public class Animal extends UnicastRemoteObject implements IAnimal {
 
 
     public String getEspeseInfo() throws RemoteException {
-        return this.especeObj.getNom()+this.especeObj.getDurée_de_vie();
+        return this.specie.getname()+this.specie.getlifeExpectancy();
     }
 
-
-    public IEspese getEspeseObj() throws RemoteException {
-        return this.especeObj;
+    public Espece getEspeseObj() throws RemoteException {
+        return (Espece) this.specie;
     }
 
-
-    public void setEspeseObj(String espeseName,String duréevie) throws RemoteException {
-        this.especeObj.setNom(espeseName);
-        this.especeObj.setDurée_de_vie(duréevie);
+    public void setEspeseObj(String espeseName,int duréevie) throws RemoteException {
+        this.specie.setname(espeseName);
+        this.specie.setlifeExpectancy(duréevie);
     }
 
+    @Override
+    public String getSuivi() throws RemoteException {
+      return this.suiviAnimal.getSuivi();
+    }
+
+    @Override
+    public void setSuivi(String suivi) throws RemoteException {
+        this.suiviAnimal.setSuivi(suivi);
+
+    }
+
+    @Override
+    public Animal getAnimalObj() throws RemoteException {
+        return this;
+    }
 
 
     //    public void test() {

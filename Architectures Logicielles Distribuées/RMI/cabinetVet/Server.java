@@ -20,10 +20,12 @@ public class Server {
 
 
         try {
-            Animal obj = new Animal();
-            obj.suiviAnimal.setSuivi("le suivi");
-            obj.especeObj.setNom("canus");
 
+            CabinnetVeterinaireImpl obj= new CabinnetVeterinaireImpl();
+            // Animal obj = new Animal();
+           /* obj.suiviAnimal.setSuivi("le suivi");
+            obj.especeObj.setname("canus");
+*/
 
             //not need if extend UnicastRemoteObject
             //Animal stub = (Animal) UnicastRemoteObject.exportObject(obj, 0);
@@ -40,7 +42,8 @@ public class Server {
             if (registry == null) {
                 System.err.println("RmiRegistry not found");
             } else {
-                registry.bind("Animal", obj);
+//                registry.bind("Animal", obj);
+                registry.bind("CabinetVet", obj);
                 System.err.println("Server ready");
             }
         } catch (Exception e) {

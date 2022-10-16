@@ -2,23 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fca9e39c-743a-4aa2-b651-a56ba717bbaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ICabinetVeterinaire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ToDO.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IEspece.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conventionname.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EspeseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Espese.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cabinetVet/Animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/AnimalImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cabinetVet/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Espese.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cabinetVet/Espese.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/EspeseImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cabinetVet/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/SuiviAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cabinetVet/SuiviAnimal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/SuiviAnimalImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Espese.java" beforeDir="false" afterPath="$PROJECT_DIR$/Espece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/IAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IEspese.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/Hello.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/out/production/helloWorld/helloWorld/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/out/production/helloWorld/helloWorld/Server.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fichiers-fournis.tgz" beforeDir="false" />
+    </list>
+    <list id="b0217395-51dc-4a3d-bdb8-9eee307b1d82" name="Changes by Richard" comment="">
+      <change beforePath="$PROJECT_DIR$/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/IAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ICabinetVeterinaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/ICabinetVeterinaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,13 +32,50 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/Server.java">
+      <ranges>
+        <range start1="22" end1="25" start2="22" end2="22" changelist="fca9e39c-743a-4aa2-b651-a56ba717bbaf" />
+        <range start1="26" end1="26" start2="23" end2="28" changelist="fca9e39c-743a-4aa2-b651-a56ba717bbaf" />
+        <range start1="42" end1="43" start2="44" end2="46" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/Client.java">
+      <ranges>
+        <range start1="13" end1="13" start2="13" end2="17" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
+        <range start1="15" end1="17" start2="19" end2="42" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
+        <range start1="18" end1="20" start2="43" end2="50" changelist="fca9e39c-743a-4aa2-b651-a56ba717bbaf" />
+        <range start1="21" end1="22" start2="51" end2="66" changelist="fca9e39c-743a-4aa2-b651-a56ba717bbaf" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/Animal.java">
+      <ranges>
+        <range start1="6" end1="12" start2="6" end2="11" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
+        <range start1="13" end1="16" start2="12" end2="14" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
+        <range start1="20" end1="23" start2="18" end2="19" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
+        <range start1="25" end1="25" start2="21" end2="22" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
+        <range start1="28" end1="30" start2="25" end2="25" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
+        <range start1="32" end1="32" start2="27" end2="38" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
+        <range start1="69" end1="70" start2="75" end2="76" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
+        <range start1="72" end1="75" start2="78" end2="80" changelist="fca9e39c-743a-4aa2-b651-a56ba717bbaf" />
+        <range start1="77" end1="81" start2="82" end2="85" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
+        <range start1="83" end1="83" start2="87" end2="102" changelist="fca9e39c-743a-4aa2-b651-a56ba717bbaf" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/IAnimal.java">
+      <ranges>
+        <range start1="29" end1="30" start2="29" end2="30" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
+        <range start1="31" end1="32" start2="31" end2="37" changelist="fca9e39c-743a-4aa2-b651-a56ba717bbaf" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,7 +97,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers"
+    "settings.editor.selected.configurable": "Errors"
   }
 }]]></component>
   <component name="RunManager" selected="Application.Client">
@@ -90,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665836780810</updated>
       <workItem from="1665836782542" duration="20188000" />
-      <workItem from="1665872266981" duration="11053000" />
+      <workItem from="1665872266981" duration="29590000" />
     </task>
     <servers />
   </component>

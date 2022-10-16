@@ -27,9 +27,14 @@ public interface IAnimal extends Remote {
 
     public String getEspeseInfo() throws RemoteException;
 
-    public IEspese getEspeseObj() throws  RemoteException;
+    public Espece getEspeseObj() throws  RemoteException;
 
-    public void setEspeseObj(String name,String duréeDeVie) throws  RemoteException;
+    public void setEspeseObj(String name,int duréeDeVie) throws  RemoteException;
+
+    public String getSuivi() throws RemoteException;
+    public void setSuivi(String suivi) throws  RemoteException;
+
+    public Animal getAnimalObj () throws RemoteException;
 
 
 }
