@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fca9e39c-743a-4aa2-b651-a56ba717bbaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IAnimal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IEspese.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICabinetVeterinaire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToDO.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimalImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Espese.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EspeseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/EspeseImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/ISuiviAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cabinetVet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EspeseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Espese.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cabinetVet/Animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/AnimalImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cabinetVet/AnimalImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/AnimalImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cabinetVet/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Espese.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cabinetVet/Espese.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/EspeseImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cabinetVet/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cabinetVet/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/SuiviAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cabinetVet/SuiviAnimal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/SuiviAnimalImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/Hello.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/out/production/helloWorld/helloWorld/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/out/production/helloWorld/helloWorld/Server.class" afterDir="false" />
@@ -32,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -94,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665836780810</updated>
       <workItem from="1665836782542" duration="20188000" />
-      <workItem from="1665872266981" duration="7055000" />
+      <workItem from="1665872266981" duration="11053000" />
     </task>
     <servers />
   </component>

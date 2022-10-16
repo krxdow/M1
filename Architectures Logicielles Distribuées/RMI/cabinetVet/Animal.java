@@ -9,7 +9,7 @@ public class Animal extends UnicastRemoteObject implements IAnimal {
     String race;
     SuiviAnimal suiviAnimal;
     String text = null;
-    EspeseImpl especeObj;
+    Espese especeObj;
 
     private
     String name;
@@ -27,7 +27,7 @@ public class Animal extends UnicastRemoteObject implements IAnimal {
         this.suiviAnimal = new SuiviAnimal();
 
         /*this.epece = new EspeseImpl();*/
-        this.especeObj = new EspeseImpl();
+        this.especeObj = new Espese();
 
     }
 

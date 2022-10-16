@@ -1,15 +1,15 @@
 import java.rmi.RemoteException;
 
-public class EspeseImpl implements IEspese {
+public class Espese implements IEspese {
 
     private
     String durée_de_vie = null;
     String nom = null;
 
-    public EspeseImpl() {
+    public Espese() {
     }
 
-    public EspeseImpl(String nom, String date) {
+    public Espese(String nom, String date) {
         this.nom = nom;
         this.durée_de_vie = date;
     }
