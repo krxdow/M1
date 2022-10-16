@@ -1,10 +1,28 @@
-import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+public class SuiviAnimal extends UnicastRemoteObject implements ISuiviAnimal {
 
 
-public interface SuiviAnimal extends Remote {
+    private  String suivi;
 
-    String getSuivi() throws RemoteException;
-    void setSuivi(String s)  throws RemoteException;
+    public SuiviAnimal() throws RemoteException{}
+
+    public SuiviAnimal(String suivi) throws RemoteException {
+        this.suivi=suivi;
+    }
+
+
+    public String getSuivi() throws RemoteException {
+        return this.suivi;
+    }
+
+
+    public void  setSuivi(String suivi) throws RemoteException {
+        this.suivi=suivi;
+
+    }
+
+
 
 }

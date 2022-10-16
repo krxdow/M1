@@ -11,17 +11,22 @@ public class Client {
             //same port as server, search registry local
             Registry registry = LocateRegistry.getRegistry(1105);
             //search in class in regisry
-            Animal stub = (Animal) registry.lookup("Animal");
+            IAnimal stub = (IAnimal) registry.lookup("Animal");
+
+            //passage par valeur
+            stub.setEspeseObj("Canis lupus","20 ans");
+
+            IEspese stubE = (IEspese) stub.getEspeseObj();
+            IEspese reponse =stub.getEspeseObj();
+
+            System.out.println(reponse );
 
 
-
-            //stub renvoie la ref de l'objet
-            SuiviAnimal stub2 = (SuiviAnimal) registry.lookup("SuiviAnimal") ;
 
             //call remote methode
             //stub.printAnimal();
 
-          String reponse = stub.test();
+          //String reponse = stub.test();
             System.out.println("response du serveur"+ reponse);
 
 

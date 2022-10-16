@@ -1,10 +1,9 @@
 import java.rmi.RemoteException;
 
-public class EspeseImpl implements Espese {
+public class EspeseImpl implements IEspese {
 
-    String durée_de_vie = null;
     private
-//
+    String durée_de_vie = null;
     String nom = null;
 
     public EspeseImpl() {
@@ -16,19 +15,24 @@ public class EspeseImpl implements Espese {
     }
 
 
-    //    @Override
     public String getNom() throws RemoteException {
         return this.nom;
     }
-
-
 
     public void setNom(String s) throws RemoteException {
         this.nom=s;
     }
 
+
     public String getDurée_de_vie() throws RemoteException {
         return this.durée_de_vie;
     }
+
+
+    public void setDurée_de_vie(String durée) throws RemoteException {
+        this.durée_de_vie=durée;
+
+    }
+
 
 }

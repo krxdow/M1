@@ -20,9 +20,9 @@ public class Server {
 
 
         try {
-            AnimalImpl obj = new AnimalImpl();
+            Animal obj = new Animal();
             obj.suiviAnimal.setSuivi("le suivi");
-            obj.epece.setNom("canus");
+            obj.especeObj.setNom("canus");
 
 
             //not need if extend UnicastRemoteObject
