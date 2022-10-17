@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="555bfcec-a95f-4cdc-bb36-214d4f8bc5c6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDO.md" beforeDir="false" afterPath="$PROJECT_DIR$/ToDO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/ICabinetVeterinaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/ICabinetVeterinaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/IEspece.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/IEspece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/Server.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/security.policy" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/security.policy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/SuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/SuiviAnimal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/Hello.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/out/production/helloWorld/helloWorld/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/out/production/helloWorld/helloWorld/Server.class" afterDir="false" />
@@ -63,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666004941128</updated>
-      <workItem from="1666004942961" duration="8623000" />
+      <workItem from="1666004942961" duration="9909000" />
     </task>
     <servers />
   </component>
