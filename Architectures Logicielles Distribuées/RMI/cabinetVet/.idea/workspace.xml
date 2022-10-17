@@ -1,86 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fca9e39c-743a-4aa2-b651-a56ba717bbaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/IEspece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conventionname.md" afterDir="false" />
+    <list default="true" id="555bfcec-a95f-4cdc-bb36-214d4f8bc5c6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../cabinetVet copie (1)/client/client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cabinetVet copie (1)/common/common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cabinetVet copie (1)/out/production/client/client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cabinetVet copie (1)/out/production/common/common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cabinetVet copie (1)/server/src/server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cabinetVet copie/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cabinetVet copie/.idea/cabinetVet copie.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cabinetVet copie/client/client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cabinetVet copie/common/common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cabinetVet copie/out/production/server/server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cabinetVet copie/server/server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cabinetVet copie/server/src/server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/cabinetVet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/Screenshot_20221017_132338.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Espese.java" beforeDir="false" afterPath="$PROJECT_DIR$/Espece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/IAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IEspese.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CabinnetVeterinaireImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/CabinnetVeterinaireImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Espece.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Espece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/IAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ICabinetVeterinaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/ICabinetVeterinaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IEspece.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/IEspece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ISuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/ISuiviAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/SuiviAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1_RMI.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDO.md" beforeDir="false" afterPath="$PROJECT_DIR$/ToDO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cabinetVet.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinetVet copie/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Espese.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/IAnimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/IEspese.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/ISuiviAnimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/SuiviAnimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/TP1_RMI.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/ToDO.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/cabinetVet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinetVet copie (1)/cabinetVet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/espece.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/security.policy" beforeDir="false" afterPath="$PROJECT_DIR$/server/security.policy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security.policy" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/Hello.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/out/production/helloWorld/helloWorld/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/out/production/helloWorld/helloWorld/Server.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fichiers-fournis.tgz" beforeDir="false" />
-    </list>
-    <list id="b0217395-51dc-4a3d-bdb8-9eee307b1d82" name="Changes by Richard" comment="">
-      <change beforePath="$PROJECT_DIR$/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/IAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ICabinetVeterinaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/ICabinetVeterinaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/Server.java">
-      <ranges>
-        <range start1="22" end1="25" start2="22" end2="22" changelist="fca9e39c-743a-4aa2-b651-a56ba717bbaf" />
-        <range start1="26" end1="26" start2="23" end2="28" changelist="fca9e39c-743a-4aa2-b651-a56ba717bbaf" />
-        <range start1="42" end1="43" start2="44" end2="46" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Client.java">
-      <ranges>
-        <range start1="13" end1="13" start2="13" end2="17" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
-        <range start1="15" end1="17" start2="19" end2="42" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
-        <range start1="18" end1="20" start2="43" end2="50" changelist="fca9e39c-743a-4aa2-b651-a56ba717bbaf" />
-        <range start1="21" end1="22" start2="51" end2="66" changelist="fca9e39c-743a-4aa2-b651-a56ba717bbaf" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Animal.java">
-      <ranges>
-        <range start1="6" end1="12" start2="6" end2="11" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
-        <range start1="13" end1="16" start2="12" end2="14" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
-        <range start1="20" end1="23" start2="18" end2="19" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
-        <range start1="25" end1="25" start2="21" end2="22" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
-        <range start1="28" end1="30" start2="25" end2="25" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
-        <range start1="32" end1="32" start2="27" end2="38" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
-        <range start1="69" end1="70" start2="75" end2="76" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
-        <range start1="72" end1="75" start2="78" end2="80" changelist="fca9e39c-743a-4aa2-b651-a56ba717bbaf" />
-        <range start1="77" end1="81" start2="82" end2="85" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
-        <range start1="83" end1="83" start2="87" end2="102" changelist="fca9e39c-743a-4aa2-b651-a56ba717bbaf" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/IAnimal.java">
-      <ranges>
-        <range start1="29" end1="30" start2="29" end2="30" changelist="b0217395-51dc-4a3d-bdb8-9eee307b1d82" />
-        <range start1="31" end1="32" start2="31" end2="37" changelist="fca9e39c-743a-4aa2-b651-a56ba717bbaf" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2GAgPhSUNGvcXf3yza7MvqHxyh4" />
+  <component name="ProjectId" id="2GGBFrCVL1Aipt0X1Npj7U1atQs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -92,46 +86,28 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "/home/ludow/Documents/GitHub/M1/Architectures Logicielles Distribuées/RMI/cabinetVet/misc",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "Errors"
+    "project.structure.side.proportion": "0.15420026",
+    "settings.editor.selected.configurable": "proofread"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Client">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Client" />
-      <module name="cabinetVet" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Server" />
-      <module name="cabinetVet" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Server" />
-      </list>
-    </recent_temporary>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/misc" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fca9e39c-743a-4aa2-b651-a56ba717bbaf" name="Changes" comment="" />
-      <created>1665836780810</created>
+      <changelist id="555bfcec-a95f-4cdc-bb36-214d4f8bc5c6" name="Changes" comment="" />
+      <created>1666004941128</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1665836780810</updated>
-      <workItem from="1665836782542" duration="20188000" />
-      <workItem from="1665872266981" duration="29590000" />
+      <updated>1666004941128</updated>
+      <workItem from="1666004942961" duration="2077000" />
     </task>
     <servers />
   </component>
@@ -148,5 +124,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
