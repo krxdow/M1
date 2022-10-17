@@ -14,15 +14,14 @@ public class Server {
     }
 
     public static void main(String[] args) {
-        //Path.of("src/security.policy").toAbsolutePath();
 
-        String path = Paths.get("security.policy").toAbsolutePath().toString();
-        //String path = Paths.get("security.policy").toRealPath().toString();
+
+        String path = Paths.get("server/src/security.policy").toAbsolutePath().toString();
+
 
         System.out.println(path);
 
-        System.setProperty("java.security.policy", "/home/ludow/Documents/GitHub/M1/Architectures Logicielles Distribuées/RMI/cabinetVet/server/security.policy");
-/*
+        System.setProperty("java.security.policy", path);
         try {
             if (System.getSecurityManager() == null) {
                 System.setSecurityManager(new RMISecurityManager());
@@ -31,7 +30,6 @@ public class Server {
         } catch (Exception e) {
             e.printStackTrace();
         }
-*/
 
         try {
 

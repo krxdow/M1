@@ -2,62 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="555bfcec-a95f-4cdc-bb36-214d4f8bc5c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../cabinetVet copie (1)/client/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinetVet copie (1)/common/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinetVet copie (1)/out/production/client/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinetVet copie (1)/out/production/common/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinetVet copie (1)/server/src/server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinetVet copie/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinetVet copie/.idea/cabinetVet copie.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinetVet copie/client/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinetVet copie/common/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinetVet copie/out/production/server/server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinetVet copie/server/server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinetVet copie/server/src/server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/cabinetVet.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/Screenshot_20221017_132338.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CabinnetVeterinaireImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/CabinnetVeterinaireImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Espece.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Espece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/IAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ICabinetVeterinaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/ICabinetVeterinaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IEspece.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/IEspece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ISuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/ISuiviAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/SuiviAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP1_RMI.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ToDO.md" beforeDir="false" afterPath="$PROJECT_DIR$/ToDO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cabinetVet.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinetVet copie/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Espese.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/IAnimal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/IEspese.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/ISuiviAnimal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/SuiviAnimal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/TP1_RMI.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/ToDO.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/cabinetVet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinetVet copie (1)/cabinetVet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/espece.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cabinetVet/security.policy" beforeDir="false" afterPath="$PROJECT_DIR$/server/security.policy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/ICabinetVeterinaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/ICabinetVeterinaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/IEspece.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/IEspece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/Server.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/security.policy" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/security.policy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/SuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/SuiviAnimal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/Hello.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloWorld/out/production/helloWorld/helloWorld/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../helloWorld/out/production/helloWorld/helloWorld/Server.class" afterDir="false" />
@@ -88,15 +41,18 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/ludow/Documents/GitHub/M1/Architectures Logicielles Distribuées/RMI/cabinetVet/misc",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.15420026",
-    "settings.editor.selected.configurable": "proofread"
+    "project.structure.side.proportion": "0.12033694",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.spelling"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/misc" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -107,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666004941128</updated>
-      <workItem from="1666004942961" duration="2077000" />
+      <workItem from="1666004942961" duration="8623000" />
     </task>
     <servers />
   </component>
