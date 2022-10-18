@@ -3,14 +3,19 @@
  */
 /**@author AMAH GNIMDOU RICHARD*/
 
+import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.Scanner;
 import javax.swing.*;
 
-public class Client {
-    private Client() {
+public class Client extends UnicastRemoteObject implements IDistributedClient {
+    private Client() throws RemoteException{
+//        super();
     }
+
+
 
     public static void main(String[] args) {
 
@@ -20,12 +25,14 @@ public class Client {
             Registry registry = LocateRegistry.getRegistry(host);
 
             //question petit 4
-            IAnimal stub = (IAnimal) registry.lookup("Animal");
-            stub.setName("zack");
-            Espece especeCopy = new Espece("canus lupus", 15);
-            stub.setEspeseObj(especeCopy.getname(), especeCopy.getlifeExpectancy());
+//            IAnimal stub = (IAnimal) registry.lookup("Animal");
+//            stub.setName("zack");
+//            Espece especeCopy = new Espece("canus lupus", 15);
 
-            System.out.println(stub.getAnimalObj());
+//            stub.setEspeseObj(especeCopy.getname(), especeCopy.getlifeExpectancy());
+
+//            System.out.println(stub.getAnimalObj());
+            ICabinetVeterinaire cabinet = (ICabinetVeterinaire) registry.lookup("CabinetVet");
             int exit = 0;
             do {
 
@@ -50,21 +57,40 @@ public class Client {
                             int cli=0;
                             final String osName = System.getProperty("os.name");
                             boolean windows= osName.contains("Windows");
-
+                            
                             do {
 
                                 Scanner scCli = new Scanner(System.in);
+                                int choix;
                                 if (windows) Runtime.getRuntime().exec("cls");
                                 else Runtime.getRuntime().exec("clear");
-                                System.out.println("****************************************************************************************");
-                                System.out.println("                                       ALERTE");
-                                System.out.println("                                       SEUIL:");
-                                System.out.println("****************************************************************************************");
-                                System.out.println("1: Listez les patients");
-                                System.out.println("2: Ajouter un patient");
-                                System.out.println("3: rechercher un patient");
-                                System.out.println("4: modifier un patient");
-                                System.out.println("0: Terminez le programme");
+
+
+                               do {
+                                   System.out.println("1: Listez les patients");
+                                   System.out.println("2: Ajouter un patient");
+                                   System.out.println("3: rechercher un patient");
+                                   System.out.println("4: modifier un patient");
+                                   System.out.println("0: Terminez le programme");
+
+                                   choix = scCli.nextInt();
+                               } while (choix >= 0 && choix <5);
+
+
+                                switch (choix) {
+                                    case 0:
+                                        System.exit(0);
+                                    case 1:
+
+                                        break;
+                                    case 2:
+                                        break;
+                                    case 3:
+                                        break;
+                                    case 4:
+                                        break;
+
+                                }
 
                             } while (cli!=0);
 
@@ -86,8 +112,24 @@ public class Client {
             System.err.println("Client exception: " + e.toString());
             e.printStackTrace();
         }
+        }
+
+    /**
+     * @return 
+     * @throws RemoteException
+     */
+    @Override
+    public void checkAlert() throws RemoteException {
+
+        System.out.println("\n\n");
+        System.out.println("************************************************************************************");
+        System.out.println("                                    ALERTE");
+        System.out.println("                     LE NOUVEAU SEUIL EST DE "+""+"PATIENTS");
+        System.out.println("************************************************************************************\n\n");
+
     }
 }
+
 
 
 //String reponse = stub.test();

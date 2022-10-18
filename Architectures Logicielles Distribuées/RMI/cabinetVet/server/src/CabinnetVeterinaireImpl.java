@@ -55,13 +55,45 @@ public class CabinnetVeterinaireImpl extends UnicastRemoteObject implements ICab
 
     public boolean addPatient(String name, String nameMaster, Espece specie, String race, String followUp) throws RemoteException {
         IAnimal newPateint = new Animal(name, nameMaster, specie, race, followUp);
-        return patients.add((Animal) newPateint);
+               try {
+                   patients.add((Animal) newPateint);
+                   return true;
+               } catch (Exception e) {
+                   return false;
+               }
     }
+
+    /**
+     * @param threshold
+     * @throws RemoteException
+     */
+    @Override
+    public int sendAlert(int threshold) throws RemoteException {
+        return threshold;
+    }
+
+    /**
+     * @return 
+     * @throws RemoteException
+     */
+    public int getCurrentPatientNumber() throws RemoteException {
+        return patients.size();
+    }
+
 
     @Override
     public boolean addPatient(String name, String nameMaster, String specieName, int lifeExpectancy, String race, String followUp) throws RemoteException {
         IAnimal newPateint = new Animal(name, nameMaster, specieName, lifeExpectancy, race, followUp);
-        return patients.add((Animal) newPateint);
-
+        try {
+            patients.add((Animal) newPateint);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
+
+    public int getPatientNumber() {
+        return patients.size();
+    }
+    
 }

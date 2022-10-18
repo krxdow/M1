@@ -22,9 +22,10 @@ public class Server {
 
         System.out.println(path);
         System.setProperty("java.security.policy", path);
+        System.setProperty(	"java.rmi.server.codebase",	"");
         try {
             if (System.getSecurityManager() == null) {
-                System.setSecurityManager(new RMISecurityManager());
+                System.setSecurityManager(new SecurityManager());
 
             }
         } catch (Exception e) {
@@ -35,20 +36,27 @@ public class Server {
 
             CabinnetVeterinaireImpl obj = new CabinnetVeterinaireImpl();
 
-            //creation de registre par code lancé sur en même temps que sur le svr ; même machine virtuelle
-            Registry registry = LocateRegistry.createRegistry(1105);
-
             //cherche un registre deja en execution
-            //Registry registry = LocateRegistry.getRegistry();
+            Registry registry = LocateRegistry.getRegistry();
             if (registry == null) {
-                System.err.println("RmiRegistry not found");
+                System.err.println("Registre RMI non trouve'");
+                System.err.println("Lancement d'un nouveau registre ...");
+                registry = LocateRegistry.createRegistry(1099);
             } else {
-             //  registry.bind("Animal", obj);
-                registry.bind("CabinetVet", obj);
+             //  registry.bind("Animal", obj)
                 System.err.println("Server ready");
             }
+            registry.bind("CabinetVet", obj);
+             ICabinetVeterinaire cabinet = (ICabinetVeterinaire) registry.lookup("CabinetVet");
+             while (true) {
+                int threshold = cabinet.getCurrentPatientNumber();
+                 if(threshold == 100) cabinet.sendAlert(100);
+                 if(threshold == 500) cabinet.sendAlert(500);
+                 if(threshold == 1000) cabinet.sendAlert(1000);
+             }
+
         } catch (Exception e) {
-            System.err.println("Server exception: " + e);
+            System.err.println("Une erreur est survenue dans le serveur a cause du registre:" + e.toString());
             e.printStackTrace();
         }
 
