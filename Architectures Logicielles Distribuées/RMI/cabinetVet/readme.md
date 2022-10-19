@@ -9,7 +9,7 @@ Le code source du projet se trouve sur ce [Dépôt] (https://github.com/krxdow/M
 
 #### 1. Version de base
 
-L'ensemble du projet est fait à l'aide de l'environment integré IntelliJ
+L’ensemble du projet est fait à l’aide de l’environment integré IntelliJ
 
 ```shell
 .
@@ -39,8 +39,57 @@ L'ensemble du projet est fait à l'aide de l'environment integré IntelliJ
 Dans un but de compartimenter le projet, le **server**, le **client** et **common** sont des modules.  
  **server** et client ont accesé à au module **common**, les modules **server** et **client** ne se voient pas
 
-Configuration
+
+_Configuration via IntelliJ_  
 ![](misc/Screenshot_20221017_132338.png)
+
+---
+#### 1. Version de base , mise en place de l'objet distant Animal
+Ici l’objet distant est la classe Animal voici l’ensemble des étapes  
+
+[l’interface](https://github.com/krxdow/M1/blob/3f19a61f52a41e5f1e0a1c76b8c36b3f65ba34b3/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinetVet/common/src/IAnimal.java) IAnimal qui extends **Remote**
+````java
+public interface IAnimal extends Remote { ... }
+````
+[L'implementation](https://github.com/krxdow/M1/blob/3f19a61f52a41e5f1e0a1c76b8c36b3f65ba34b3/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinetVet/server/src/Animal.java) (visible uniquement du côté serveur) qui hérite **UnicastRemoteObject** par héritage l’objet Animal va se comporter comme un stub fait office d’interface. 
+````java
+public class Animal extends UnicastRemoteObject implements IAnimal { ...}
+````
+Le server va distribuer objet, en créant ou cherchant un registre (`createRegistry` /`getRegistry`) et le lier au registre ici sous le nom d’animal , `registry.bind("Animale", animalStub);`
+````java
+public class Server {
+ public Server() {
+ }
+
+ public static void main(String[] args) throws RemoteException {
+
+  Integer host = (args.length < 1) ? null : Integer.parseInt(args[0]);
+  
+  Animal animalStub = new Animal();
+  Registry registry;
+  
+  try {
+      
+   try {
+    registry = LocateRegistry.createRegistry(1099);
+   } catch (RemoteException remoteException) {
+    registry = LocateRegistry.getRegistry(1099);
+   }
+
+   registry.bind("Animale", animalStub);
+   
+  } catch (Exception e) {
+   System.err.println("Server exception: " + e);
+   e.printStackTrace();
+  }
+
+
+ }
+}
+
+````
+
+
 
 
 #### 2. Gestionnaire de securité
@@ -136,10 +185,8 @@ public  class Client {
 [Interface](https://github.com/krxdow/M1/blob/be6eec7b1d84a9a2c9f76ca0e686c72aa7950bb7/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinetVet/common/src/ICabinetVeterinaire.java)  
 [L’Implementation](https://github.com/krxdow/M1/blob/be6eec7b1d84a9a2c9f76ca0e686c72aa7950bb7/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinetVet/server/src/CabinnetVeterinaireImpl.java)
 
-## **Creation de Patient**
+## **Création de Patient**
 
 ## **Téléchargement de Code**
 
 ## **Alerte**
-
-

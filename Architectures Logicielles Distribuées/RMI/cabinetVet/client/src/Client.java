@@ -23,7 +23,8 @@ public class Client {
             Espece especeCopy = new Espece("canus lupus",15);
             stub.setEspeseObj(especeCopy.getname(),especeCopy.getlifeExpectancy());
 
-             System.out.println( stub.getAnimalObj());
+
+            System.out.println( stub.getAnimalObj());
 
 
 
