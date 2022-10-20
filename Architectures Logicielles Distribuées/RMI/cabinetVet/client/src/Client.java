@@ -12,9 +12,7 @@ public class Client {
         String host = (args.length < 1) ? null : args[0];
         try {
             //same port as server, search registry local
-            Registry registry = LocateRegistry.getRegistry(1105);
-            //search in class in regisry
-
+            Registry registry = LocateRegistry.getRegistry(host);
 
             //question petit 4
             // stub de l'implementation de l'interface Animal, pas la liste des animaux
@@ -22,7 +20,6 @@ public class Client {
             stub.setName("zack");
             Espece especeCopy = new Espece("canus lupus",15);
             stub.setEspeseObj(especeCopy.getname(),especeCopy.getlifeExpectancy());
-
 
             System.out.println( stub.getAnimalObj());
 

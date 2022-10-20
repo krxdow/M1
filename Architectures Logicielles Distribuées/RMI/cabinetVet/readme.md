@@ -57,36 +57,29 @@ public class Animal extends UnicastRemoteObject implements IAnimal { ...}
 ````
 Le server va distribuer objet, en créant ou cherchant un registre (`createRegistry` /`getRegistry`) et le lier au registre ici sous le nom d’animal , `registry.bind("Animale", animalStub);`
 ````java
-public class Server {
- public Server() {
- }
-
+public class Server { 
+    public Server() {}
  public static void main(String[] args) throws RemoteException {
-
-  Integer host = (args.length < 1) ? null : Integer.parseInt(args[0]);
-  
-  Animal animalStub = new Animal();
-  Registry registry;
-  
-  try {
-      
-   try {
-    registry = LocateRegistry.createRegistry(1099);
-   } catch (RemoteException remoteException) {
-    registry = LocateRegistry.getRegistry(1099);
-   }
-
-   registry.bind("Animale", animalStub);
-   
-  } catch (Exception e) {
-   System.err.println("Server exception: " + e);
-   e.printStackTrace();
-  }
-
-
- }
+        Integer host = (args.length < 1) ? null : Integer.parseInt(args[0]);
+        
+        Animal animalStub = new Animal();
+        Registry registry;
+        
+        try {
+            try {
+                registry = LocateRegistry.createRegistry(1099);
+            } catch (RemoteException remoteException) {
+                registry = LocateRegistry.getRegistry(1099);
+            }
+            
+            registry.bind("Animale", animalStub);
+        
+        } catch (Exception e) {
+            System.err.println("Server exception: " + e);
+            e.printStackTrace();
+        }
+    }
 }
-
 ````
 
 
@@ -104,13 +97,12 @@ grant {
 };
 ```
 Une premiere facon via le code avec l’objet RMISecurityManager  
-petite astuse la methode setProperty, accepte seulement le chemin absolu, afin que le projet soit exportable, ont utilse la classe Paths
+petite astuce, la methode setProperty, accepte seulement le chemin absolu, afin que le projet soit exportable, ont utilse la methode **toAbsolutePath** classe Paths
 ```java
 import java.nio.file.Paths;
 import java.rmi.RMISecurityManager;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
-
 
 public class Server {
 
@@ -133,20 +125,24 @@ ll est aussi possible d'activer un security manager en utilisant simplement l'op
 ```shell
 java -Djava.security.manager -Djava.security.policy=security.policy 
 ```
-via IntelliJ
-![](misc/Screenshot_20221017_144018.png)
+
+
+![via IntelliJ](misc/Screenshot_20221017_144018.png)
+
 
 
 #### 3. Class Suivi
 On crée une interface et son implementation 
 
+
+[ISuiviAnimal](https://github.com/krxdow/M1/blob/8b785d2485ec926cbcdafc5fdc9fe3e029d5c875/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinetVet/common/src/ISuiviAnimal.java)
 ```java
 public interface ISuiviAnimal extends Remote {
     String getSuivi() throws RemoteException;
     void setSuivi(String s)  throws RemoteException;
     }
 ```
-
+[SuiviAnimal](https://github.com/krxdow/M1/blob/8b785d2485ec926cbcdafc5fdc9fe3e029d5c875/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinetVet/server/src/SuiviAnimal.java)
 ```java
 public class SuiviAnimal extends UnicastRemoteObject implements ISuiviAnimal {
     private String suivi;
@@ -156,8 +152,6 @@ public class SuiviAnimal extends UnicastRemoteObject implements ISuiviAnimal {
     public void setSuivi(String suivi) throws RemoteException {this.suivi = suivi;}
 }
 ```
-
-
 
 
 #### 4. Copies Espese

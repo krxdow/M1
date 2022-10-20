@@ -1,8 +1,10 @@
 package helloWorld;
+
 import java.rmi.registry.Registry;
 import java.rmi.registry.LocateRegistry;
-
-public class Server {
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+public class Server  {
 
 	public Server() {}
 
@@ -10,8 +12,9 @@ public class Server {
 	public static void main(String args[]) {
 
 		try {
-			HelloImpl obj = new HelloImpl();
 
+
+			HelloImpl obj = new HelloImpl();
 
 			//registre lancé sur en même temps que sur le svr ; même machine virtuelle
 			 Registry registry = LocateRegistry.createRegistry(1106);
@@ -27,4 +30,5 @@ public class Server {
 			e.printStackTrace();
 		}
 	}
+
 }

@@ -14,12 +14,6 @@ public class Animal extends UnicastRemoteObject implements IAnimal {
     private Espece specie;
     private String name;
 
-    //    private String text = null;
-    //    private // String espece;
-
-    /*
-        //constructeur
-    */
     public Animal(String name, String nameMaster, Espece specie, String race, String followUp) throws RemoteException {
         this.name = name;
         this.nameMaster = nameMaster;
@@ -27,19 +21,15 @@ public class Animal extends UnicastRemoteObject implements IAnimal {
         this.race = race;
         this.suiviAnimal = new SuiviAnimal();
 
-
     }
 
     public Animal(String name, String nameMaster, String specieName, int speciesAverageLife, String race, String followUp) throws RemoteException {
-
 
         this.name = name;
         this.nameMaster = nameMaster;
         this.specie = new Espece(specieName, speciesAverageLife);
         this.race = race;
         this.suiviAnimal = new SuiviAnimal();
-
-
     }
 
     public String getName() {
@@ -57,16 +47,6 @@ public class Animal extends UnicastRemoteObject implements IAnimal {
     public void setNameMaster(String nameMaster) {
         this.nameMaster = nameMaster;
     }
-
-/*
-    public String getEspece() {
-        return this.espece;
-    }
-
-    public void setEspece(String espece) {
-        this.espece = espece;
-    }
-*/
 
     public String getRace() {
         return this.race;
@@ -90,31 +70,27 @@ public class Animal extends UnicastRemoteObject implements IAnimal {
         this.specie.setlifeExpectancy(duréevie);
     }
 
-    @Override
+
     public String getSuivi() throws RemoteException {
         return this.suiviAnimal.getSuivi();
     }
 
-    @Override
+
     public void setSuivi(String suivi) throws RemoteException {
         this.suiviAnimal.setSuivi(suivi);
 
     }
 
-    @Override
     public Animal getAnimalObj() throws RemoteException {
         return this;
     }
 
-
-    //    public void test() {
     public String test() {
 //    System.out.println("the remote object is well distributed");
         return "the remote object is well distributed";
 
     }
 
-    //@Override
     public void printAnimal() throws RemoteException {
         System.out.println(this.getName() + ' ' + ' ' + this.getNameMaster() + ' ' + this.getRace());
     }
