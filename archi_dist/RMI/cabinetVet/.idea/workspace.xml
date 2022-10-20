@@ -5,31 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="555bfcec-a95f-4cdc-bb36-214d4f8bc5c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../RMI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinet/client/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinet/client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinet/common/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinet/common/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinet/common/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinet/common/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinet/common/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinet/common/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinet/common/src/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinet/server/server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinet/server/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cabinet/server/src/server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/cabinetVet.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/server/server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../helloWorld/helloWorld.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../helloWorld/out/production/helloWorld/helloWorld/helloWorld.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../out/production/RMI/RMI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../out/production/RMI/cabinet vétérinaire.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../out/production/RMI/cabinetVet/cabinet vétérinaire.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../out/production/RMI/helloWorld/helloWorld.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Architectures Logicielles Distribuées/RMI/.gitrepo" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Architectures Logicielles Distribuées/RMI/Cours2_RMI_2022.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Architectures Logicielles Distribuées/RMI/Exemple HelloWorld_RMI_projets_multiple.zip" beforeDir="false" />
@@ -115,6 +90,18 @@
       <change beforePath="$PROJECT_DIR$/../../../Architectures Logicielles Distribuées/Service Web SOAP-WSDL/TD service web SOAP .pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Architectures Logicielles Distribuées/Service Web SOAP-WSDL/TPSOAP_Final.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Architectures Logicielles Distribuées/Service Web SOAP-WSDL/solution.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/client/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/client/client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/client/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/client/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/common/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/common/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/common/common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/common/src/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/common/src/common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/server/server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/server/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/server/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/ICabinetVeterinaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/ICabinetVeterinaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/CabinnetVeterinaireImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/CabinnetVeterinaireImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +165,7 @@
       <workItem from="1666115631921" duration="5051000" />
       <workItem from="1666122299810" duration="21256000" />
       <workItem from="1666130105134" duration="2477000" />
-      <workItem from="1666212408637" duration="10481000" />
+      <workItem from="1666212408637" duration="12227000" />
     </task>
     <servers />
   </component>

@@ -14,7 +14,7 @@ public class CabinnetVeterinaireImpl extends UnicastRemoteObject implements ICab
     //
 
     private List<Animal> patients = new ArrayList<Animal>();
-//private List<Client> runningClients = new ArrayList<>(Client);
+    private List<IDistributedClient> runningClients = new ArrayList<IDistributedClient>();
     public CabinnetVeterinaireImpl() throws RemoteException {
     }
 
@@ -59,7 +59,6 @@ public class CabinnetVeterinaireImpl extends UnicastRemoteObject implements ICab
     }
 
 
-
     public int addPatient(String name, String nameMaster, Espece specie, String race, String followUp) throws RemoteException {
         IAnimal newPateint = new Animal(name, nameMaster, specie, race, followUp);
 
@@ -75,6 +74,29 @@ public class CabinnetVeterinaireImpl extends UnicastRemoteObject implements ICab
                    return -1;
                }
     }
+
+    /**
+     * @param client
+     * @throws RemoteException
+     */
+    @Override
+    public void bindClientToCabinet(IDistributedClient client) throws RemoteException {
+this.runningClients.add(client);
+        System.out.println("Un nouveau veterinaire a e'te' lie' au cabinet");
+        System.out.println("Total des veterinaire actuellement:"+this.runningClients.size());
+    }
+
+    /**
+     * @param client
+     * @throws RemoteException
+     */
+    @Override
+    public void unbindClientToCabinet(IDistributedClient client) throws RemoteException {
+this.runningClients.remove(client);
+        System.out.println("Un nouveau veterinaire est parti du cabinet");
+        System.out.println("Total des veterinaire actuellement:"+this.runningClients.size());
+    }
+
 
     @Override
     public int addPatient(String name, String nameMaster, String specieName, int lifeExpectancy, String race, String followUp) throws RemoteException {
@@ -98,8 +120,10 @@ public class CabinnetVeterinaireImpl extends UnicastRemoteObject implements ICab
      * @throws RemoteException
      */
     @Override
-    public int sendAlert(int threshold) throws RemoteException {
-        return threshold;
+    public void sendAlert(int threshold) throws RemoteException {
+        for (IDistributedClient client: runningClients){
+    client.checkAlert(threshold);
+        }
     }
 
     /**
@@ -110,8 +134,5 @@ public class CabinnetVeterinaireImpl extends UnicastRemoteObject implements ICab
         return patients.size();
     }
 
-    public int getPatientNumber() {
-        return patients.size();
-    }
     
 }

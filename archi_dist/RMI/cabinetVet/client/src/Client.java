@@ -81,6 +81,7 @@ IDistributedClient boundClient = new Client();
                            }
                             break;
                         case 2:
+
                             Scanner info = new Scanner(System.in);
                             System.out.println("VOUS ETES EN TRAIN D'AJOUTER UN PATIENT\n\n");
                             System.out.println("Veuillez renseigner les informations de l'animal patient");
