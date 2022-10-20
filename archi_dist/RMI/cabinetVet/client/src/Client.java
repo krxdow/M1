@@ -19,7 +19,7 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
 
 
     public static void main(String[] args) throws RemoteException {
-IDistributedClient boundClient = new Client();
+        IDistributedClient boundClient = new Client();
         String host = (args.length < 1) ? null : args[0];
         try {
             //same port as server, search registry local
@@ -34,8 +34,9 @@ IDistributedClient boundClient = new Client();
 
 //            System.out.println(stub.getAnimalObj());
             ICabinetVeterinaire cabinet = (ICabinetVeterinaire) registry.lookup("CabinetVet");
-
+            cabinet.bindClientToCabinet(boundClient);
             try {
+
                 int cli = 0;
                 final String osName = System.getProperty("os.name");
                 boolean windows = osName.contains("Windows");
@@ -61,6 +62,7 @@ IDistributedClient boundClient = new Client();
 
                     switch (choix) {
                         case 0:
+                            cabinet.unbindClientToCabinet(boundClient);
                             System.exit(0);
                         case 1:
                             List<Animal> allAnimal = cabinet.searchAllAnimal();
@@ -70,15 +72,15 @@ IDistributedClient boundClient = new Client();
                             System.out.println("+-------------------------+--------------------------------+-------------------------+---------------+---------------+");
                             System.out.println("|            Nom          |     Nom du maitre(esse)        |           Espece        |  Duree de vie |     Race      |");
                             System.out.println("+-------------------------+--------------------------------+-------------------------+---------------+---------------+");
-                           for (Animal patient: allAnimal) {
-                               System.out.printf("|%-25s|%-32s|%-25s|%15d|%-15s|", patient.getName().length()>25?patient.getName().substring(0,25):patient.getName()
-                                       ,patient.getNameMaster().length()>25?patient.getNameMaster().substring(0,25):patient.getNameMaster()
-                                       ,patient.getEspeseObj().getname().length() > 25 ? patient.getEspeseObj().getname().substring(0,25) : patient.getEspeseObj().getname()
-                                       , patient.getEspeseObj().getlifeExpectancy()
-                                       , patient.getRace().length() > 15 ? patient.getRace().substring(0,15) : patient.getRace()  );
-                               System.out.println("+-------------------------+--------------------------------+------------------+---------------+----------------+");
+                            for (Animal patient : allAnimal) {
+                                System.out.printf("|%-25s|%-32s|%-25s|%15d|%-15s|", patient.getName().length() > 25 ? patient.getName().substring(0, 25) : patient.getName()
+                                        , patient.getNameMaster().length() > 25 ? patient.getNameMaster().substring(0, 25) : patient.getNameMaster()
+                                        , patient.getEspeseObj().getname().length() > 25 ? patient.getEspeseObj().getname().substring(0, 25) : patient.getEspeseObj().getname()
+                                        , patient.getEspeseObj().getlifeExpectancy()
+                                        , patient.getRace().length() > 15 ? patient.getRace().substring(0, 15) : patient.getRace());
+                                System.out.println("+-------------------------+--------------------------------+------------------+---------------+----------------+");
 
-                           }
+                            }
                             break;
                         case 2:
 
@@ -111,18 +113,18 @@ IDistributedClient boundClient = new Client();
                             List<Animal> searchResult = cabinet.searchAllAnimal();
                             System.out.println("*********************************************************************************************");
                             System.out.println("                            RESULTAT DE LA RECHERCHE");
-                            if(searchResult.size()>1)
+                            if (searchResult.size() > 1)
                                 System.out.println("                            Patients potententiellement recherche's");
                             System.out.println("*********************************************************************************************");
                             System.out.println("+-------------------------+--------------------------------+-------------------------+---------------+---------------+");
                             System.out.println("|            Nom          |     Nom du maitre(esse)        |           Espece        |  Duree de vie |     Race      |");
                             System.out.println("+-------------------------+--------------------------------+-------------------------+---------------+---------------+");
-                            for (Animal patient: searchResult) {
-                                System.out.printf("|%-25s|%-32s|%-25s|%15d|%-15s|", patient.getName().length()>25?patient.getName().substring(0,25):patient.getName()
-                                        ,patient.getNameMaster().length()>25?patient.getNameMaster().substring(0,25):patient.getNameMaster()
-                                        ,patient.getEspeseObj().getname().length() > 25 ? patient.getEspeseObj().getname().substring(0,25) : patient.getEspeseObj().getname()
+                            for (Animal patient : searchResult) {
+                                System.out.printf("|%-25s|%-32s|%-25s|%15d|%-15s|", patient.getName().length() > 25 ? patient.getName().substring(0, 25) : patient.getName()
+                                        , patient.getNameMaster().length() > 25 ? patient.getNameMaster().substring(0, 25) : patient.getNameMaster()
+                                        , patient.getEspeseObj().getname().length() > 25 ? patient.getEspeseObj().getname().substring(0, 25) : patient.getEspeseObj().getname()
                                         , patient.getEspeseObj().getlifeExpectancy()
-                                        , patient.getRace().length() > 15 ? patient.getRace().substring(0,15) : patient.getRace()  );
+                                        , patient.getRace().length() > 15 ? patient.getRace().substring(0, 15) : patient.getRace());
                                 System.out.println("+-------------------------+--------------------------------+------------------+---------------+----------------+");
 
                             }
