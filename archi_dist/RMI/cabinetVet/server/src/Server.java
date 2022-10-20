@@ -1,7 +1,8 @@
 /**
  * @author FANUS LUDOVIC@author AMAH GNIMDOU RICHARD
  */
-/**@author AMAH GNIMDOU RICHARD*/
+
+package server;
 
 import java.nio.file.Paths;
 import java.rmi.RMISecurityManager;
@@ -22,6 +23,7 @@ public class Server {
 
         System.out.println(path);
         System.setProperty("java.security.policy", path);
+        System.setProperty("java.rmi.server.hostname","localhost");
         System.setProperty(	"java.rmi.server.codebase",	"file:///home/richard/Documents/collab/M1/archi_dist/RMI/cabinetVet/out/*");
 //        System.setSecurityManager(new SecurityManager());
         try {

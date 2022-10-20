@@ -3,6 +3,8 @@
  */
 /**@author AMAH GNIMDOU RICHARD*/
 
+package server;
+
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
@@ -88,6 +90,7 @@ this.runningClients.add(client);
 
     /**
      * @param client
+     * delete a client from the list of bound client to Cabinet Veterinaire
      * @throws RemoteException
      */
     @Override
@@ -117,6 +120,7 @@ this.runningClients.remove(client);
 
     /**
      * @param threshold
+     * sends alert to all client bound to Cabinet veterinaire
      * @throws RemoteException
      */
     @Override
@@ -127,7 +131,7 @@ this.runningClients.remove(client);
     }
 
     /**
-     * @return 
+     * @return the size of the patients in CabinetVeterinaire
      * @throws RemoteException
      */
     public int getCurrentPatientNumber() throws RemoteException {
@@ -136,7 +140,8 @@ this.runningClients.remove(client);
 
     /**
      * @param fullName 
-     * @return
+     * @return 0 if deletion was successful
+     * -1 if the the animal was not found
      * @throws RemoteException
      */
     @Override

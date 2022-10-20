@@ -3,6 +3,8 @@
  */
 /**@author AMAH GNIMDOU RICHARD*/
 
+package server;
+
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
@@ -109,7 +111,7 @@ public class Animal extends UnicastRemoteObject implements IAnimal {
 
     //    public void test() {
     public String test() {
-//    System.out.println("the remote object is well distributed");
+    System.out.println("the remote object is well distributed");
         return "the remote object is well distributed";
 
     }

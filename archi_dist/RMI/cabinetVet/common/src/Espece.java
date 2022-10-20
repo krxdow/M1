@@ -1,6 +1,7 @@
 /**@author FANUS LUDOVIC*/
 /**@author AMAH GNIMDOU RICHARD*/
 
+package common;
 
 import java.rmi.RemoteException;
 import java.io.Serializable;
