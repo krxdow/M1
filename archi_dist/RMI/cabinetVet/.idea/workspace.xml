@@ -98,22 +98,6 @@
       <change beforePath="$PROJECT_DIR$/../cabinet/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/server/server.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cabinet/server/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/server/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/common/Espece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/common/IAnimal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/common/ICabinetVeterinaire.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/common/IDistributedClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/common/IEspece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/common/ISuiviAnimal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/CabinnetVeterinaireImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/SuiviAnimal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/CabinnetVeterinaireImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/CabinnetVeterinaireImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/SuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/SuiviAnimal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +164,7 @@
       <workItem from="1666130105134" duration="2477000" />
       <workItem from="1666212408637" duration="17086000" />
       <workItem from="1666264970292" duration="3027000" />
-      <workItem from="1666268638781" duration="7051000" />
+      <workItem from="1666268638781" duration="8568000" />
     </task>
     <servers />
   </component>
