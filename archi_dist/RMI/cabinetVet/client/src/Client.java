@@ -53,11 +53,11 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
                         System.out.println("1: Listez les patients");
                         System.out.println("2: Ajouter un patient");
                         System.out.println("3: rechercher un patient");
-//                        System.out.println("4: modifier un patient");
+                        System.out.println("4: rechercher un patient");
                         System.out.println("0: Terminez le programme");
 
                         choix = scCli.nextInt();
-                    } while (choix > 0 && choix < 3);
+                    } while (choix > 0 && choix < 4);
 
 
                     switch (choix) {
@@ -83,36 +83,50 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
                             }
                             break;
                         case 2:
+                            int opSuccess = 1;
+                            String retry = "";
+                            do {
 
-                            Scanner info = new Scanner(System.in);
-                            System.out.println("VOUS ETES EN TRAIN D'AJOUTER UN PATIENT\n\n");
-                            System.out.println("Veuillez renseigner les informations de l'animal patient");
-                            System.out.println("Nom du patient:");
-                            String name = info.nextLine();
-                            System.out.println("Nom du maitre ou maitresse du patient:");
-                            String nameMaster = info.nextLine();
-                            System.out.println("Espece du patient:");
-                            String specieName = info.nextLine();
-                            System.out.println("Duree de vie moyen selon l'espece:");
-                            int speciesAverageLife = Integer.parseInt(info.nextLine());
-                            System.out.println("Race du patient:");
-                            String race = info.nextLine();
-                            System.out.println("Dossier de Suivi du patient");
-                            System.out.println("Une description de l'etat de suivi du patient: ");
-                            String followUp = info.nextLine();
-                            int insert = cabinet.addPatient(name, nameMaster, specieName, speciesAverageLife, race, followUp);
-                            if (insert == -2) {
-                                System.out.println("Nous avons deja un tel patient de nom " + name + " ayant pour maitre(sse) " + nameMaster);
-                            } else if (insert == -1) {
-                                System.out.println("Une erreur s'est produite lors de l'ajout de patient");
-                            } else {
-                                System.out.println("Patient Enregistre'");
-                            }
+                                Scanner info = new Scanner(System.in);
+                                System.out.println("VOUS ETES EN TRAIN D'AJOUTER UN PATIENT\n\n");
+                                System.out.println("Veuillez renseigner les informations de l'animal patient");
+                                System.out.println("Nom du patient:");
+                                String name = info.nextLine();
+                                System.out.println("Nom du maitre ou maitresse du patient:");
+                                String nameMaster = info.nextLine();
+                                System.out.println("Espece du patient:");
+                                String specieName = info.nextLine();
+                                System.out.println("Duree de vie moyen selon l'espece:");
+                                int speciesAverageLife = Integer.parseInt(info.nextLine());
+                                System.out.println("Race du patient:");
+                                String race = info.nextLine();
+                                System.out.println("Dossier de Suivi du patient");
+                                System.out.println("Une description de l'etat de suivi du patient: ");
+                                String followUp = info.nextLine();
+                                int insert = cabinet.addPatient(name, nameMaster, specieName, speciesAverageLife, race, followUp);
+                                if (insert == -2) {
+                                    opSuccess = -2;
+                                    System.out.println("Nous avons deja un tel patient de nom " + name + " ayant pour maitre(sse) " + nameMaster);
+
+
+                                } else if (insert == -1) {
+                                    opSuccess = -1;
+                                    System.out.println("Une erreur s'est produite lors de l'ajout de patient");
+                                    do {
+                                        Scanner rep1 = new Scanner(System.in);
+                                        System.out.println("Voulez-vous reesayer l'ajout? (O)ui/(N)on: ");
+                                        retry = rep1.nextLine();
+                                    } while (retry.trim() != "oui".toUpperCase() || retry.trim() != "non".toUpperCase() || retry.trim() != "n".toUpperCase() || retry.trim() != "o".toUpperCase());
+                                } else {
+                                    opSuccess = 0;
+                                    System.out.println("Patient Enregistre'");
+                                }
+                            } while ((opSuccess == -1 || opSuccess == -2) && (retry.trim() != "oui".toUpperCase() || retry.trim() != "o".toUpperCase()));
                             break;
                         case 3:
                             List<Animal> searchResult = cabinet.searchAllAnimal();
                             System.out.println("*********************************************************************************************");
-                            System.out.println("                            RESULTAT DE LA RECHERCHE");
+                            System.out.println("                            RESULTATS DE LA RECHERCHE");
                             if (searchResult.size() > 1)
                                 System.out.println("                            Patients potententiellement recherche's");
                             System.out.println("*********************************************************************************************");
@@ -129,8 +143,59 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
 
                             }
                             break;
-//                        case :
-//                            break;
+                        case 4:
+                            String confirm;
+                            String retryDel = null;
+                            do {
+                                List<Animal> animalTobeDeleted = cabinet.searchAllAnimal();
+                                System.out.println("*********************************************************************************************");
+                                System.out.println("                            LISTE DES PATIENTS");
+                                System.out.println("*********************************************************************************************");
+                                System.out.println("+-------------------------+--------------------------------+-------------------------+---------------+---------------+");
+                                System.out.println("|            Nom          |     Nom du maitre(esse)        |           Espece        |  Duree de vie |     Race      |");
+                                System.out.println("+-------------------------+--------------------------------+-------------------------+---------------+---------------+");
+                                for (Animal patient : animalTobeDeleted) {
+                                    System.out.printf("|%-25s|%-32s|%-25s|%15d|%-15s|", patient.getName().length() > 25 ? patient.getName().substring(0, 25) : patient.getName()
+                                            , patient.getNameMaster().length() > 25 ? patient.getNameMaster().substring(0, 25) : patient.getNameMaster()
+                                            , patient.getEspeseObj().getname().length() > 25 ? patient.getEspeseObj().getname().substring(0, 25) : patient.getEspeseObj().getname()
+                                            , patient.getEspeseObj().getlifeExpectancy()
+                                            , patient.getRace().length() > 15 ? patient.getRace().substring(0, 15) : patient.getRace());
+                                    System.out.println("+-------------------------+--------------------------------+------------------+---------------+----------------+");
+
+                                }
+                                Scanner delete = new Scanner(System.in);
+                                System.out.println("Quel patient voluez-vous supprimer?");
+                                System.out.println("Saisissez le nom du patient:");
+                                String nameDel = delete.nextLine();
+                                System.out.println("Saisissez le nom du patient:");
+                                String nameMasterDel = delete.nextLine();
+                                do {
+                                    System.out.println("Etes-vous sur de vouloir supprimer ce patient? (O)ui/(N)on :");
+                                    confirm = delete.nextLine();
+                                } while (confirm.trim() != "oui".toUpperCase() ||
+                                        confirm.trim() != "non".toUpperCase() ||
+                                        confirm.trim() != "n".toUpperCase() ||
+                                        confirm.trim() != "y".toUpperCase());
+                                if (confirm.trim() == "oui".toUpperCase() ||
+                                        confirm.trim() == "o".toUpperCase())
+                                {  int delSucces=cabinet.deletePatient(nameDel + " " + nameMasterDel);
+                                    if(delSucces==-1)
+                                    {
+                                        System.out.println("Le patient spe'cifie' n'a pas e'te' retrouve'");
+
+                                        do {
+                                            Scanner rep1 = new Scanner(System.in);
+                                            System.out.println("Voulez-vous reesayer la suppression de patient? (O)ui/(N)on: ");
+                                            retryDel = rep1.nextLine();
+                                        } while (retryDel.trim() != "oui".toUpperCase() || retryDel.trim() != "non".toUpperCase() || retryDel.trim() != "n".toUpperCase() || retryDel.trim() != "o".toUpperCase());
+
+                                    }
+                                    System.out.println("Patient supprime'");
+
+                                }
+                            } while (retryDel.trim() == "oui".toUpperCase() || retryDel.trim() == "o".toUpperCase());
+
+                            break;
 
                     }
 

@@ -134,5 +134,20 @@ this.runningClients.remove(client);
         return patients.size();
     }
 
-    
+    /**
+     * @param fullName 
+     * @return
+     * @throws RemoteException
+     */
+    @Override
+    public int deletePatient(String fullName) throws RemoteException {
+        Animal foundAnimal =  this.searchAnimalByFullName(fullName);
+    if(foundAnimal==null){
+        return -1;
+    }
+     patients.remove(foundAnimal);
+        return 0;
+    }
+
+
 }

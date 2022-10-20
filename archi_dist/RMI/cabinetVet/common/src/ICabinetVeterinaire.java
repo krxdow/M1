@@ -24,5 +24,7 @@ public interface ICabinetVeterinaire extends Remote{
 //    int getPatientNumber() throws RemoteException;
  void sendAlert(int threshold) throws RemoteException;
  int getCurrentPatientNumber()throws RemoteException;
+ int deletePatient(String fullName) throws RemoteException;
+
 
 }

@@ -99,6 +99,8 @@
       <change beforePath="$PROJECT_DIR$/../cabinet/server/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/server/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/ICabinetVeterinaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/ICabinetVeterinaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/CabinnetVeterinaireImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/CabinnetVeterinaireImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +164,7 @@
       <workItem from="1666115631921" duration="5051000" />
       <workItem from="1666122299810" duration="21256000" />
       <workItem from="1666130105134" duration="2477000" />
-      <workItem from="1666212408637" duration="12458000" />
+      <workItem from="1666212408637" duration="16767000" />
     </task>
     <servers />
   </component>
