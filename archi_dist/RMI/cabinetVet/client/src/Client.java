@@ -12,7 +12,7 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.List;
 import java.util.Scanner;
 
-//import javax.swing.*;
+import javax.swing.JFrame;
 //
 public class Client extends UnicastRemoteObject implements IDistributedClient {
     public Client() throws RemoteException {
@@ -54,8 +54,8 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
                     do {
                         System.out.println("1: Listez les patients");
                         System.out.println("2: Ajouter un patient");
-                        System.out.println("3: rechercher un patient");
-                        System.out.println("4: rechercher un patient");
+                        System.out.println("3: Rechercher un patient");
+                        System.out.println("4: Supprimer un patient");
                         System.out.println("0: Terminez le programme");
 
                         choix = scCli.nextInt();
@@ -177,7 +177,7 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
                                 } while (confirm.trim() != "oui".toUpperCase() ||
                                         confirm.trim() != "non".toUpperCase() ||
                                         confirm.trim() != "n".toUpperCase() ||
-                                        confirm.trim() != "y".toUpperCase());
+                                        confirm.trim() != "o".toUpperCase());
                                 if (confirm.trim() == "oui".toUpperCase() ||
                                         confirm.trim() == "o".toUpperCase())
                                 {  int delSucces=cabinet.deletePatient(nameDel + " " + nameMasterDel);
@@ -206,36 +206,55 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
             } catch (final Exception exception) {
                 exception.printStackTrace();
             }
-//            int exit = 0;
-//            do {
-//
-//                System.out.println("1: Lancer en CLI");
-//                System.out.println("2: Lancer en GUI");
-//                System.out.println("0: Arret immediat");
-//                Scanner scanner = new Scanner(System.in);
-//                int entree = scanner.nextInt();
-//                int sortie = 0;
-//                switch (entree) {
-//                    case 0:
-//                        System.out.println("Arret du programme");
-//                        exit = 0;
-//                        break;
-//                    case 1:
-//                        exit = 1;
-//                        System.out.println("Passage en CLI");
-//                        // Consulter la liste des animaux
-//                        // ajouter des animaux
-//                        //
-//
-//
-//                        break;
-//                    case 2:
-//                        exit = 2;
-//                        System.out.println("Chargement GUI");
-//                        break;
-//                }
-//            } while (exit != 0);
-//
+            int exit = 0;
+            do {
+
+                System.out.println("1: Lancer en CLI");
+                System.out.println("2: Lancer en GUI");
+                System.out.println("0: Arret immediat");
+                Scanner scanner = new Scanner(System.in);
+                int entree = scanner.nextInt();
+                int sortie = 0;
+                switch (entree) {
+                    case 0:
+                        System.out.println("Arret du programme");
+                        exit = 0;
+                        break;
+                    case 1:
+                        exit = 1;
+                        System.out.println("Passage en CLI");
+                        // Consulter la liste des animaux
+                        // ajouter des animaux
+                        //
+
+
+                        break;
+                    case 2:
+                        exit = 2;
+                        System.out.println("Chargement GUI");
+                        // Main Window Frame
+                        JFrame mainFrame = new JFrame("Cabinet Veterinaire");
+                        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+                        // App's Toolbar
+                        JToolBar toolbar = new JToolBar();
+                        toolbar.setRollover(true);
+                        JButton list  = new JButton("Lister patient");
+                        toolbar.add(lister);
+                        JButton add  = new JButton("Ajouter");
+                        toolbar.add(add);
+                        JButton search  = new JButton("Rechercher");
+                        toolbar.add(search);
+                        JButton delete  = new JButton("Supprimer un patient");
+                        toolbar.add(delete);
+
+                        //
+                        Container contentPane = mainFrame.getContentPane();
+                        contentPane.add(toolbar);
+                        break;
+                }
+            } while (exit != 0);
+
 
 
         } catch (Exception e) {

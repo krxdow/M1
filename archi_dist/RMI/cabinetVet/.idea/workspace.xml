@@ -97,22 +97,20 @@
       <change beforePath="$PROJECT_DIR$/../cabinet/common/src/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/common/src/common.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cabinet/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/server/server.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cabinet/server/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/server/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cabinetVet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cabinetVet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Espece.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Espece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/IAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/IAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/ICabinetVeterinaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/ICabinetVeterinaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/IEspece.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/IEspece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/ISuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/ISuiviAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/common/ICabinetVeterinaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/common/ICabinetVeterinaire.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/common/IDistributedClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/common/IDistributedClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/Animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/CabinnetVeterinaireImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/CabinnetVeterinaireImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/common/Espece.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/common/IAnimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/common/ICabinetVeterinaire.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/common/IDistributedClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/common/IEspece.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/common/ISuiviAnimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/CabinnetVeterinaireImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/SuiviAnimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/CabinnetVeterinaireImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/CabinnetVeterinaireImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/SuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/SuiviAnimal.java" afterDir="false" />
@@ -147,7 +145,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/richard/Documents/collab/M1/archi_dist/RMI/cabinetVet/common/src",
+    "last_opened_file_path": "/home/richard/Downloads/Compressed/calculator",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -156,7 +154,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.12033694",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -182,6 +180,7 @@
       <workItem from="1666130105134" duration="2477000" />
       <workItem from="1666212408637" duration="17086000" />
       <workItem from="1666264970292" duration="3027000" />
+      <workItem from="1666268638781" duration="7051000" />
     </task>
     <servers />
   </component>
