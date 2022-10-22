@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="555bfcec-a95f-4cdc-bb36-214d4f8bc5c6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/Architectures Logicielles Distribuées/RMI/cabinetVet/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/.gitrepo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/Cours2_RMI_2022.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/Exemple HelloWorld_RMI_projets_multiple.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/RMI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/Structurez_vos_données_avec_xml.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/TP1_RMI.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/TP_RMI/TD1RMISolution.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/TP_RMI/TDRMI.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/client/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/client/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/client/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/client/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/client/client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/client/src/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/out/production/common/common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/out/production/server/security.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/out/production/server/server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/src/Espece.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/src/IAnimal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/src/ICabinetVeterinaire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/src/IDistributedClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/src/IEspece.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/src/ISuiviAnimal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/common/src/common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/server/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/server/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/server/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/server/server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/server/src/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/server/src/CabinnetVeterinaireImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/server/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/server/src/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/server/src/SuiviAnimal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/server/src/security.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinet/server/src/server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/.idea/cabinetVet.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/.idea/dictionaries/ludow.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/.idea/dictionaries/richard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/TP1_RMI.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/ToDO.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/client/client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/client/src/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/client/src/client.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/common/common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/common/src/Espece.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/common/src/IAnimal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/common/src/ICabinetVeterinaire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/common/src/IDistributedClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/common/src/IEspece.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/common/src/ISuiviAnimal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/conventionname.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/espece.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/misc/Screenshot_20221017_132338.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/misc/Screenshot_20221017_144018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/out/production/server/security.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/out/production/server/server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/server/server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/server/src/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/server/src/CabinnetVeterinaireImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/server/src/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/server/src/SuiviAnimal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/server/src/security.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/cabinetVet/server/src/server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/HelloImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/helloWorld.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/out/production/helloWorld/helloWorld/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/out/production/helloWorld/helloWorld/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/out/production/helloWorld/helloWorld/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/out/production/helloWorld/helloWorld/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/out/production/helloWorld/helloWorld/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/out/production/helloWorld/helloWorld/Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/out/production/helloWorld/helloWorld/HelloImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/out/production/helloWorld/helloWorld/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/helloWorld/out/production/helloWorld/helloWorld/helloWorld.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/java_rmi_workflow.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/out/production/RMI/RMI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/out/production/RMI/cabinet vétérinaire.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/out/production/RMI/cabinetVet/cabinet vétérinaire.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/out/production/RMI/helloWorld/helloWorld.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/proxy/Internet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/proxy/ProxyInternet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/proxy/RealInternet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/proxy/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/proxy/proxy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/RMI/tp2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/Service Web SOAP-WSDL/.gitrepo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/Service Web SOAP-WSDL/JAXWSWorkflowEtAstuces.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/Service Web SOAP-WSDL/SOAP_WSDL.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/Service Web SOAP-WSDL/TD service web SOAP .pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/Service Web SOAP-WSDL/TPSOAP_Final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../archi_dist/Service Web SOAP-WSDL/solution.pdf" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GGBFrCVL1Aipt0X1Npj7U1atQs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ludow/Documents/GitHub/M1/Architectures Logicielles Distribuées/RMI/cabinetVet/misc&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.12033694&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.spelling&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/misc" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="555bfcec-a95f-4cdc-bb36-214d4f8bc5c6" name="Changes" comment="" />
+      <created>1666004941128</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666004941128</updated>
+      <workItem from="1666004942961" duration="8986000" />
+      <workItem from="1666454631363" duration="628000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
