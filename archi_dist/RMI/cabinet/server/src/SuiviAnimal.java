@@ -1,9 +1,10 @@
 /**
- * @author FANUS LUDOVIC@author AMAH GNIMDOU RICHARD
+ * @author FANUS LUDOVIC
  * @author AMAH GNIMDOU RICHARD
- * @author AMAH GNIMDOU RICHARD
+
  */
-/**@author AMAH GNIMDOU RICHARD*/
+
+
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;

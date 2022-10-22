@@ -2,8 +2,9 @@
 /**@author AMAH GNIMDOU RICHARD*/
 
 
+
 import java.rmi.RemoteException;
-import java.io.Serializable;
+
 
 public class Espece implements IEspece {
 

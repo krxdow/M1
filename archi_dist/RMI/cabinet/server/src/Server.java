@@ -1,12 +1,15 @@
 /**
- * @author FANUS LUDOVIC@author AMAH GNIMDOU RICHARD
+ * @author FANUS LUDOVIC
+ * @author AMAH GNIMDOU RICHARD
  */
-/**@author AMAH GNIMDOU RICHARD*/
+
+
 
 import java.nio.file.Paths;
-import java.rmi.RMISecurityManager;
+//import java.rmi.RMISecurityManager;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
 
 
 public class Server {
@@ -15,53 +18,73 @@ public class Server {
 
     public static void main(String[] args) {
 
-
+//        permission	java.net.SocketPermission "*:1024-65535","connect,accept";
+//        permission	java.net.SocketPermission ":80","connect";
         // Recupere le chemin absolue du ficher depuis le programme
         // Permettant de ne pas coder en dure le path
-        String path = Paths.get("server/src/security.policy").toAbsolutePath().toString();
-
-        System.out.println(path);
-//        try {
-//            if (System.getSecurityManager() == null) {
-//                System.setSecurityManager(new SecurityManager());
-//
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        String path = Paths.get("src/security.policy").toAbsolutePath().toString();
+        System.out.println("Notre path final: "+path);
         System.setProperty("java.security.policy", path);
-        String prop = System.setProperty("java.rmi.server.codebase",	"file:///home/richard/Desktop/out");
-        System.out.println("prop= "+prop);
-        System.setSecurityManager(new SecurityManager());
+//        System.setProperty("java.rmi.server.hostname","localhost");
+        System.setProperty(	"java.rmi.server.codebase",	"file:/home/richard/Desktop/common");
 //        System.setSecurityManager(new SecurityManager());
+        try {
+            if (System.getSecurityManager() == null) {
+                System.setSecurityManager(new SecurityManager());
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         try {
 
-            CabinnetVeterinaireImpl obj = new CabinnetVeterinaireImpl();
-
+            CabinnetVeterinaireImpl cabinet = new CabinnetVeterinaireImpl();
+//            CabinnetVeterinaireImpl remoteMethodeStub = (CabinnetVeterinaireImpl) UnicastRemoteObject.exportObject(cabinetVet, 0);
             //cherche un registre deja en execution
-            Registry registry = LocateRegistry.getRegistry();
-            if (registry == null) {
-                System.err.println("Registre RMI non trouve'");
-                System.err.println("Lancement d'un nouveau registre ...");
-                registry = LocateRegistry.createRegistry(1099);
-            } else {
-             //  registry.bind("Animal", obj)
-                registry.bind("CabinetVet", obj);
-                System.err.println("Server ready");
-            }
-            registry.rebind("CabinetVet", obj);
-//             ICabinetVeterinaire cabinet = (ICabinetVeterinaire) registry.lookup("CabinetVet");
+//            Registry registry = LocateRegistry.getRegistry();
+//            if (registry == null) {
+//                System.err.println("Registre RMI non trouve'");
+//                System.err.println("Lancement d'un nouveau registre ...");
+//                registry = LocateRegistry.createRegistry(1099);
+//            } else {
+//             //  registry.bind("Animal", obj)
+//                registry.bind("CabinetVet", obj);
+//                System.err.println("Server ready");
+//            }
+         Registry   registry = LocateRegistry.createRegistry(1099);
 
+//            registry.bind("Animal", obj);
+            registry.bind("cabinet", cabinet);
+            System.out.println("L'Objet cabinet bien a ete ditribue' dans le registre");
+            System.err.println("Server est pret");
+//            registry.rebind("CabinetVet", obj);
+             ICabinetVeterinaire cabinetStub = (ICabinetVeterinaire) registry.lookup("cabinet");
+
+
+             // Question 5
 //             while (true) {
-//                int threshold = cabinet.getCurrentPatientNumber();
-//                 if(threshold == 100) cabinet.sendAlert(100);
-//                 if(threshold == 500) cabinet.sendAlert(500);
-//                 if(threshold == 1000) cabinet.sendAlert(1000);
+//                int threshold = cabinetStub.getCurrentPatientNumber();
+//                 switch (threshold) {
+//                     case 100:
+//                         cabinetStub.sendAlert(100);
+//                         System.out.println("Le seuil est a 100 patients");
+//                         break;
+//                     case 500:
+//                         cabinetStub.sendAlert(500);
+//                         System.out.println("Le seuil est passe' a 100 patients");
+//                         break;
+//                     case 1000:
+//                         cabinetStub.sendAlert(1000);
+//                         System.out.println("Le nouveau seuil est a 1000 patients");
+//                         break;
+//                     default:
+//                         System.out.println("Le nombre de patients actuellement est: "+threshold);
+//                 }
 //             }
 
         } catch (Exception e) {
-            System.err.println("Une erreur est survenue dans le serveur a cause du registre:" + e.toString());
+            System.err.println("Une erreur est survenue dans le serveur a cause du registre:  " + e.toString());
             e.printStackTrace();
         }
 

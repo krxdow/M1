@@ -1,8 +1,8 @@
 /**@author FANUS LUDOVIC*/
 /**@author AMAH GNIMDOU RICHARD*/
 
-package common;
-
+//package common;
+//
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.List;

@@ -21,7 +21,6 @@ public class Server {
         // Recupere le chemin absolue du ficher depuis le programme
         // Permettant de ne pas coder en dure le path
         String path = Paths.get("server/src/security.policy").toAbsolutePath().toString();
-
         System.out.println(path);
         System.setProperty("java.security.policy", path);
         System.setProperty("java.rmi.server.hostname","localhost");
