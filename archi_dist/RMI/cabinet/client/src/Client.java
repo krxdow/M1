@@ -6,6 +6,7 @@
 
 //import java.awt.*;
 
+import java.nio.file.Paths;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -22,6 +23,12 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
 
 
     public static void main(String[] args) throws RemoteException {
+
+        String path = Paths.get("src/security.policy").toAbsolutePath().toString();
+//        System.out.println("Notre path final: "+path);
+        System.setProperty("java.security.policy", path);
+//        System.setProperty("java.rmi.server.hostname","localhost");
+        System.setProperty(	"java.rmi.server.codebase",	"file:/home/richard/Desktop/common");
         IDistributedClient boundClient = new Client();
         String host = (args.length < 1) ? null : args[0];
         try {
