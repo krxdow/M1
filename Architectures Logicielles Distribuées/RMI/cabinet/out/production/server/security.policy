@@ -1,4 +1,13 @@
 grant {
-permission	java.net.SocketPermission "*:1024-65535","connect,accept";
-permission java.security.AllPermission;
+    permission java.net.SocketPermission "*:1024-65535", "connect,accept,resolve";
+    permission java.net.SocketPermission "*:1-1023", "connect,resolve";
+};
+
+
+grant {
+    permission java.security.AllPermission;
+};
+
+grant {
+    permission java.io.FilePermission "<<ALL FILES>>", "read, write";
 };

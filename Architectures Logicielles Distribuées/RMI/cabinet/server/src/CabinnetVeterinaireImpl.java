@@ -10,9 +10,9 @@ import java.util.List;
 
 public class CabinnetVeterinaireImpl extends UnicastRemoteObject implements ICabinetVeterinaire {
 
+    private final List<IDistributedClient> runningClients = new ArrayList<IDistributedClient>();
     // Liste des patients (animaux)
     private List<IAnimal> patients = new ArrayList<IAnimal>();
-    private List<IDistributedClient> runningClients = new ArrayList<IDistributedClient>();
 
     public CabinnetVeterinaireImpl() throws RemoteException {
     }
@@ -57,36 +57,8 @@ public class CabinnetVeterinaireImpl extends UnicastRemoteObject implements ICab
         return this.patients;
     }
 
-//    @Override
-//    public int addPatient(IAnimal newPateint) throws RemoteException {
-//        return 0;
-//    }
 
 
-//    public int addPatient(IAnimal newPateint) throws RemoteException {
-////        String name, String nameMaster, Espece specie, String race, String followUp
-////        IAnimal newPateint = new Animal(name, nameMaster, specie, race, followUp);
-//        String name = newPateint.getName();
-//        String nameMaster = newPateint.getNameMaster();
-//        try {
-//            if (searchAnimalByFullName(name + " " + nameMaster) != null)
-//                return -2;
-//            patients.add((Animal) newPateint);
-//            return 0;
-//
-//        } catch (Exception e) {
-//            System.out.println("Une erreur s'est produite lors de l'ajout du patient " + name + " " + nameMaster);
-//            e.printStackTrace();
-//            return -1;
-//        }
-//    }
-
-
-
-    /**
-     * @param client
-     * @throws RemoteException
-     */
     @Override
     public void bindClientToCabinet(IDistributedClient client) throws RemoteException {
         this.runningClients.add(client);
@@ -106,34 +78,34 @@ public class CabinnetVeterinaireImpl extends UnicastRemoteObject implements ICab
     }
 
 
-//    @Override
+    //    @Override
     public int addPatient(String name, String nameMaster, String specieName, int lifeExpectancy, String race, String followUp) throws RemoteException {
         IAnimal newPateint = new Animal(name, nameMaster, specieName, lifeExpectancy, race, followUp);
         try {
-            if (searchAnimalByFullName(name+" "+nameMaster)!= null)
+            if (searchAnimalByFullName(name + " " + nameMaster) != null)
                 return -2;
-            patients.add((Animal) newPateint);
+            patients.add(newPateint);
             int threshold = this.patients.size();
             switch (threshold) {
                 case 1:
                     sendAlert(1);
-                    System.out.println("Le seuil est a 100 patients");
+                    System.err.println("Le seuil est a 100 patients");
                     break;
                 case 3:
                     sendAlert(500);
-                    System.out.println("Le seuil est passe' a 100 patients");
+                    System.err.println("Le seuil est passe' a 100 patients");
                     break;
                 case 5:
                     sendAlert(1000);
-                    System.out.println("Le nouveau seuil est a 1000 patients");
+                    System.err.println("Le nouveau seuil est a 1000 patients");
                     break;
                 default:
-                    System.out.println("Le nombre de patients actuellement est: "+threshold);
+                    ;
             }
             return 0;
 
         } catch (Exception e) {
-            System.out.println("Une erreur s'est produite lors de l'ajout du patient "+name+" "+nameMaster);
+            System.out.println("Une erreur s'est produite lors de l'ajout du patient " + name + " " + nameMaster);
             e.printStackTrace();
             return -1;
         }
@@ -170,14 +142,11 @@ public class CabinnetVeterinaireImpl extends UnicastRemoteObject implements ICab
         List<IAnimal> foundAnimal = this.searchAllAnimal(fullName);
         if (foundAnimal.size() != 1) {
             return -1;
-        }
-        else {
+        } else {
             this.patients.remove(foundAnimal.get(0));
             return 0;
         }
 
-
     }
-
 
 }

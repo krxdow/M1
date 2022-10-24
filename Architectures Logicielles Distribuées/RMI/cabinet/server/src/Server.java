@@ -4,10 +4,14 @@
  */
 
 
-
+import java.net.URI;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+
+
+
 
 
 public class Server {
@@ -15,27 +19,28 @@ public class Server {
     }
 
     public static void main(String[] args) {
-
-        // Permettant de ne pas coder en dure le path du codebase
-        String pathCommon = Paths.get("cabinet/common/src").toAbsolutePath().toString();
-        System.setProperty(	"java.rmi.server.codebase",	pathCommon);
-
-        // Recupere le chemin absolue du ficher depuis le programme
-        // Permettant de ne pas coder en dure le path
-/*        String path = Paths.get("src/security.policy").toAbsolutePath().toString();
-        System.out.println("Notre path final: "+path);
-        System.setProperty("java.security.policy", path);
-         try {
-            if (System.getSecurityManager() == null) {
-                System.setSecurityManager(new SecurityManager());
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
-
         try {
 
-            Registry registry ;
+
+            // permet de ne pas coder en dure le path du codebase
+            URI commonDirectoryPath = Paths.get("../common/src").toUri().normalize();
+            System.setProperty("java.rmi.server.codebase", commonDirectoryPath.toString());
+
+            //Chemain absolu du fichier
+            Path policyFilePathURI = Paths.get("server/src/security.policy").toAbsolutePath().normalize();
+            System.setProperty("java.security.policy", policyFilePathURI.toString());
+
+            //lancement du manager de sécurité
+            try {
+                if (System.getSecurityManager() == null) {
+                    System.setSecurityManager(new SecurityManager());
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+
+            Registry registry;
             CabinnetVeterinaireImpl cabinet = new CabinnetVeterinaireImpl();
 
             try {
@@ -49,38 +54,37 @@ public class Server {
 
             //registry.bind("Animal", obj);
 
-            registry.bind("cabinet", cabinet);
+            registry.rebind("cabinet", cabinet);
 
             System.out.println("L'Objet cabinet bien a ete ditribue' dans le registre");
             System.err.println("Server est pret");
 
-            // registry.rebind("CabinetVet", obj);
-             ICabinetVeterinaire cabinetStub = (ICabinetVeterinaire) registry.lookup("cabinet");
+            // registry.rebind("CabinetVet", oICabinetVeterinaire cabinetStub = (ICabinetVeterinaire) registry.lookup("cabinet");
 
 
-             // Question 5
-//             while (true) {
-//                int threshold = cabinetStub.getCurrentPatientNumber();
-//                 switch (threshold) {
-//                     case 100:
-//                         cabinetStub.sendAlert(100);
-//                         System.out.println("Le seuil est a 100 patients");
-//                         break;
-//                     case 500:
-//                         cabinetStub.sendAlert(500);
-//                         System.out.println("Le seuil est passe' a 100 patients");
-//                         break;
-//                     case 1000:
-//                         cabinetStub.sendAlert(1000);
-//                         System.out.println("Le nouveau seuil est a 1000 patients");
-//                         break;
-//                     default:
-//                         System.out.println("Le nombre de patients actuellement est: "+threshold);
-//                 }
-//             }
+            // Question 5
+/*             while (true) {
+                int threshold = cabinetStub.getCurrentPatientNumber();
+                 switch (threshold) {
+                    case 100:
+                         cabinetStub.sendAlert(100);
+                         System.out.println("Le seuil est a 100 patients");
+                         break;
+                     case 500:
+                         cabinetStub.sendAlert(500);
+                         System.out.println("Le seuil est passe' a 100 patients");
+                         break;
+                     case 1000:
+                         cabinetStub.sendAlert(1000);
+                         System.out.println("Le nouveau seuil est a 1000 patients");
+                         break;
+                     default:
+                         System.out.println("Le nombre de patients actuellement est: "+threshold);
+                 }
+             }*/
 
         } catch (Exception e) {
-            System.err.println("Une erreur est survenue dans le serveur a cause du registre:  " + e.toString());
+            System.err.println("Une erreur est survenue dans le serveur a cause du registre:  " + e);
             e.printStackTrace();
         }
 

@@ -1,12 +1,44 @@
 # Architectures Distribuées
 ## TP1: Java RMI, Cabinet Vétérinaire
-
-### Projet rendu Par AMAH GNIMDOU RICHARD et Fanus Ludovic
-## **Une premiere version simple**
-
-
 Le code source du projet se trouve sur ce [Dépôt] (https://github.com/krxdow/M1/tree/master/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinetVet)
+### Projet rendu Par AMAH GNIMDOU RICHARD et Fanus Ludovic
 
+# Instruction de la compilation et lancement 
+
+Simplement, télécharger les fichiers .jar et exécuter comme ci-dessous
+````shell
+java -jar server.jar
+java -jar client.jar
+````
+Autrement Se placer dans le dossier racine du projet **cabinet** et exécuter les commandes suivantes
+
+
+```shell
+# compilation client
+javac server/src/*.java -sourcepath common/src/ -d classesServer
+```
+
+```shell
+# compilation client
+javac client/src/*.java -sourcepath common/src/ -d classesClient
+```
+
+```shell
+# lancement du server
+cd classesServer
+java Server Server.class
+```
+
+```shell
+# lancement du client
+cd classesClient
+java Client Client.class
+```
+
+
+
+
+## **Une premiere version simple**
 #### 1. Version de base
 
 L'ensemble du projet est fait à l'aide de l'environment integré IntelliJ
@@ -48,14 +80,14 @@ Configuration
 Le RMISecurityManager applique la politique de sécurité pour les classes qui sont chargées en tant que stubs pour les objets distants,(ici dans notre cas la classe Animal )en remplaçant toutes les méthodes de contrôle d'accès pertinentes du SecurityManager. 
 Par défaut, les objets stub ne sont autorisés qu'à effectuer des opérations de définition de classe et d'accès aux classe
 
-La gestion des droits se fait à traver le fichier security.policy
+La gestion des droits se fait à traver le fichier [security.policy](https://github.com/krxdow/M1/blob/433a467fe5d48ee86732bef34bc78a34d0f7f553/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinet/server/src/security.policy)
 ```
 grant {
   permission java.security.AllPermission;
 };
 ```
 Une premiere facon via le code avec l’objet RMISecurityManager  
-petite astuse la methode setProperty, accepte seulement le chemin absolu, afin que le projet soit exportable, ont utilse la classe Paths
+petite astuse, la methode setProperty, accepte seulement le chemin absolu, afin que le projet soit exportable, les methodes la classe Paths sont utilisée.
 ```java
 import java.nio.file.Paths;
 import java.rmi.RMISecurityManager;
@@ -67,9 +99,10 @@ public class Server {
 
  public static void main(String[] args) {
 
-  String path = Paths.get("server/src/security.policy").toAbsolutePath().toString();
-  System.setProperty("java.security.policy", path);
-
+  //Chemain absolu du fichier
+  Path policyFilePathURI = Paths.get("server/src/security.policy").toAbsolutePath().normalize();
+  System.setProperty("java.security.policy", policyFilePathURI.toString());
+  
   try {
    if (System.getSecurityManager() == null) {
     System.setSecurityManager(new RMISecurityManager());
@@ -80,16 +113,18 @@ public class Server {
  }
 }
 ```
+
 ll est aussi possible d'activer un security manager en utilisant simplement l'option -Djava.security.manager de la JVM. 
 ```shell
-java -Djava.security.manager -Djava.security.policy=security.policy 
+cd classesServer
+java -Djava.security.manager -Djava.security.policy=../server/src/security.policy Server Server.class
 ```
 via IntelliJ
 ![](misc/Screenshot_20221017_144018.png)
 
 
 #### 3. Class Suivi
-On crée une interface et son implementation 
+On crée une [interface](https://github.com/krxdow/M1/blob/433a467fe5d48ee86732bef34bc78a34d0f7f553/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinet/server/src/SuiviAnimal.java) et son [implementation](https://github.com/krxdow/M1/blob/433a467fe5d48ee86732bef34bc78a34d0f7f553/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinet/common/src/ISuiviAnimal.java) 
 
 ```java
 public interface ISuiviAnimal extends Remote {
@@ -116,8 +151,7 @@ public class SuiviAnimal extends UnicastRemoteObject implements ISuiviAnimal {
 
 
 
-L'objet **Espese** (placé dans le module **common** )est pas un objets distants, n'est pas envoyé à travers le stub du server.  
-Mais le client y accede donc ici l'interface **Espese** exentende serialization 
+L'objet **Espese** (placé dans le module **common** ) est passé par valeur et nom par reference pour cela les valeurs doit être de type primitife et l’objet doit implementé l'interface sérialisable.
 ``` java
 public interface IEspece extends Serializable {...}
 ```

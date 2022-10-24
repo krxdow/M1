@@ -5,7 +5,6 @@
 
 
 //import java.awt.*;
-
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -13,11 +12,11 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.List;
 import java.util.Scanner;
 
+
 //
 public class Client extends UnicastRemoteObject implements IDistributedClient {
     public Client() throws RemoteException {
     }
-
 
     public static void main(String[] args) throws RemoteException {
         IDistributedClient boundClient = new Client();
@@ -30,10 +29,9 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
 //            IAnimal stub = (IAnimal) registry.lookup("Animal");
 //            stub.setName("zack");
 //            Espece especeCopy = new Espece("canus lupus", 15);
-
 //            stub.setEspeseObj(especeCopy.getname(), especeCopy.getlifeExpectancy());
-
 //            System.out.println(stub.getAnimalObj());
+
             ICabinetVeterinaire cabinet = (ICabinetVeterinaire) registry.lookup("cabinet");
             cabinet.bindClientToCabinet(boundClient);
 
@@ -130,7 +128,7 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
                                             String specieName = info.nextLine();
                                             System.out.print("Duree de vie moyen selon l'espece (en chiffre entier, en ANNEES): ");
                                             String specieAvgLi = info.nextLine();
-                                            int speciesAverageLife = specieAvgLi != "" ? -99 : Integer.parseInt(specieAvgLi);
+                                            int speciesAverageLife = specieAvgLi == "" ? -99 : Integer.parseInt(specieAvgLi);
                                             System.out.print("Race du patient: ");
                                             String race = info.nextLine();
                                             System.out.println("\nDossier de Suivi du patient");
@@ -316,6 +314,9 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
                                                 } else System.out.println("Patient supprime'");
 
                                             }
+                                            else {
+
+                                            }
 //                                            System.out.println("Test retry: "+(retryDel.trim().toUpperCase() == "non".toUpperCase()));
                                         } while (retryDel.trim().toUpperCase().equals("oui".toUpperCase())
                                                 || retryDel.trim().toUpperCase().equals("o".toUpperCase()));
@@ -349,29 +350,22 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
 
     // Question 5
 
-    /**
-     * @return
-     * @throws RemoteException
-     */
+
     @Override
     public void checkAlert(int threshold) throws RemoteException {
 
-        System.out.println("\n\n");
-        System.out.println("************************************************************************************");
-        System.out.println("                             NOUVELLE ALERTE:");
+        System.err.println("\n\n");
+        System.err.println("************************************************************************************");
+        System.err.println("                             NOUVELLE ALERTE:");
         if (threshold == 1) {
-            System.out.println("                     LE NOUVEAU SEUIL EST DE " + threshold + " PATIENTS");
+            System.err.println("                     LE NOUVEAU SEUIL EST DE " + threshold + " PATIENTS");
         } else if (threshold == 5) {
-            System.out.println("                     LE NOUVEAU SEUIL EST PASSE A " + threshold + " PATIENTS");
+            System.err.println("                     LE NOUVEAU SEUIL EST PASSE A " + threshold + " PATIENTS");
         } else
-            System.out.println("                     FELICITATIONS! LE CABINET A ATTEINT " + threshold + " PATIENTS");
-        System.out.println("************************************************************************************\n\n");
+            System.err.println("                     FELICITATIONS! LE CABINET A ATTEINT " + threshold + " PATIENTS");
+        System.err.println("************************************************************************************\n\n");
 
     }
 
 
 }
-
-
-//String reponse = stub.test();
-// System.out.println("response du serveur"+ reponse);
