@@ -172,3 +172,23 @@ public  class Client {
 
 ## **Creation de Patient**
 
+## **Télechargment Du Codebase**
+La mise en place d’un CodeBase permet de charger dynamiquement les classes
+
+```java
+public class Server {
+ public Server() {
+ }
+
+ public static void main(String[] args) {
+  try {
+
+   URI commonDirectoryPath = Paths.get("../common/src").toUri().normalize();
+   System.setProperty("java.rmi.server.codebase", commonDirectoryPath.toString());
+  }
+  ...
+ }
+```
+
+## **Gestion Des Alerte**
+
