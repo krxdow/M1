@@ -5,13 +5,13 @@ Le code source du projet se trouve sur ce [Dépôt](https://github.com/krxdow/M1
 
 # Instruction Compilation et Lancement 
 
-Simplement, télécharger les fichiers .jar et exécuter comme ci-dessous
+Simplement, récupérer les fichiers .jar dans le dossier cabinet et exécuter comme ci-dessous
 ````shell
 java -jar server.jar
 java -jar client.jar
 ````
 
-Autrement Se placer dans le dossier racine du projet **cabinet** et exécuter les commandes suivantes
+Autrement se placer dans le dossier racine du projet **cabinet** et exécuter les commandes suivantes
 
 
 ```shell
