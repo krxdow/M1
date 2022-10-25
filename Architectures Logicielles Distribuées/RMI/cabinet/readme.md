@@ -3,42 +3,45 @@
 Le code source du projet se trouve sur ce [Dépôt](https://github.com/krxdow/M1/tree/master/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinetVet)
 ### Projet rendu Par AMAH GNIMDOU RICHARD et Fanus Ludovic
 
-# Instruction de la compilation et lancement 
+# Instruction Compilation et Lancement 
 
 Simplement, télécharger les fichiers .jar et exécuter comme ci-dessous
 ````shell
-$ java -jar server.jar
-$ java -jar client.jar
+java -jar server.jar
+java -jar client.jar
 ````
+
 Autrement Se placer dans le dossier racine du projet **cabinet** et exécuter les commandes suivantes
 
 
 ```shell
 # compilation client
-$ javac server/src/*.java -sourcepath common/src/ -d classesServer
+javac server/src/*.java -sourcepath common/src/ -d classesServer
 ```
 
 ```shell
 # compilation client
-$ javac client/src/*.java -sourcepath common/src/ -d classesClient
+javac client/src/*.java -sourcepath common/src/ -d classesClient
 ```
 
 ```shell
 # lancement du server
-$ cd classesServer
-$ java Server Server.class
+cd classesServer
+java Server Server.class
 ```
 
 ```shell
 # lancement du client
-$ cd classesClient
-$ java Client Client.class
+cd classesClient
+java Client Client.class
 ```
 
 
 
 
 ## **Une première version simple**
+----
+## **Une premiere version simple**
 #### 1. Version de base
 
 L'ensemble du projet est fait à l'aide de l'environment de développement intégré IntelliJ
@@ -117,8 +120,8 @@ public class Server {
 
 Il est aussi possible d'activer un security manager en utilisant simplement l'option `-Djava.security.manager` de la JVM. 
 ```shell
-$ cd classesServer
-$ java -Djava.security.manager -Djava.security.policy=../server/src/security.policy Server Server.class
+cd classesServer
+java -Djava.security.manager -Djava.security.policy=../server/src/security.policy Server Server.class
 ```
 via IntelliJ
 ![](misc/Screenshot_20221017_144018.png)

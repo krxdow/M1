@@ -14,12 +14,7 @@ public class Animal extends UnicastRemoteObject implements IAnimal {
     private Espece specie;
     private String name;
 
-    //    private String text = null;
-    //    private // String espece;
 
-    /*
-        //constructeur
-    */
     public Animal(String name, String nameMaster, Espece specie, String race, String followUp) throws RemoteException {
         this.name = name;
         this.nameMaster = nameMaster;
@@ -31,7 +26,6 @@ public class Animal extends UnicastRemoteObject implements IAnimal {
     }
 
     public Animal(String name, String nameMaster, String specieName, int speciesAverageLife, String race, String followUp) throws RemoteException {
-
 
         this.name = name;
         this.nameMaster = nameMaster;
@@ -58,15 +52,6 @@ public class Animal extends UnicastRemoteObject implements IAnimal {
         this.nameMaster = nameMaster;
     }
 
-/*
-    public String getEspece() {
-        return this.espece;
-    }
-
-    public void setEspece(String espece) {
-        this.espece = espece;
-    }
-*/
 
     public String getRace() {
         return this.race;

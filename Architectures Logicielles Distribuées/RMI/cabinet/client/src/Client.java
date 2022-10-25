@@ -126,19 +126,19 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
                                             System.out.println("Veuillez renseigner les informations de l'animal patient: ");
                                             do {
                                                 System.out.print("Nom du patient: ");
-                                                String name = info.nextLine();
+                                                name = info.nextLine();
                                                 if (name == "") System.out.println("Le nom du patient ne peut pas être vide.");
                                             } while (name == "");
 
                                             do {
                                                 System.out.print("Nom du Maître ou Maîtresse du patient: ");
-                                                String nameMaster = info.nextLine();
+                                                nameMaster = info.nextLine();
                                                 if (nameMaster=="") System.out.println("Le nom du maître ne peut pas être vide.");
                                             } while (nameMaster =="" );
 
                                             do {
                                                 System.out.print("Espèce du patient : ");
-                                                String specieName = info.nextLine();
+                                                specieName = info.nextLine();
                                                 if (specieName == "") System.out.println("L'espece du patient ne peut pas être vide.");
                                             } while (specieName == "");
 
@@ -151,7 +151,7 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
                                             do {
                                                 System.out.println("\nDossier de Suivi du patient");
                                                 System.out.println("Une description de l'état de suivi du patient: ");
-                                                String followUp = info.nextLine();
+                                                followUp = info.nextLine();
                                                 if (followUp=="") System.out.println("Le dossier du patient ne peut pas être vide.");
                                             } while (followUp == "");
 
