@@ -3,7 +3,7 @@
 
 ### Projet rendu Par AMAH GNIMDOU RICHARD et Fanus Ludovic
 Le code source du projet se trouve sur ce [Dépôt](https://github.com/krxdow/M1/tree/master/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinetVet)  
-Un Diagrame [UML]()
+Un Diagrame [UML](https://github.com/krxdow/M1/blob/2efcf8f71200d0e93a37af3df434ce0c3d03da85/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinet/UML.png)
 
 
 # Instruction Compilation et Lancement
