@@ -236,14 +236,14 @@ Les alertes sont un mécanimse permettant de notifier chaque vétérinaire d'un 
 Ici, nous avons implementé ce mécanisme directement dans l'implementaion (`CabinetVeterinaireImpl`) de l'objet distribué `ICabinetVeterinaire`, qui appelle une méthode distante du client qui est transformé en objet distribué(`IDistributedClient`),
 Cette méthode reçoit la valeur (passage par valeur ou par copie) du seuil et affiche un message de notification contenant ce seuil.
 
-## **Définition de la méthode d'alerte au niveau du client**
+#### **Définition de la méthode d'alerte au niveau du client**
 
 ```java
  public void checkAlert(int threshold) throws RemoteException {
         ...
     }
 ```
-## **Appel de la méthode distante par CabinetVeterinaireImpl**
+#### **Appel de la méthode distante par CabinetVeterinaireImpl**
 
 ```java
 int threshold = this.patients.size();
