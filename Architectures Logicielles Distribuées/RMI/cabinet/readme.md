@@ -1,10 +1,12 @@
 # Architectures Distribuées
 ## TP1: Java RMI, Cabinet Vétérinaire
-Le code source du projet se trouve sur ce [Dépôt](https://github.com/krxdow/M1/tree/master/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinetVet)
+
 ### Projet rendu Par AMAH GNIMDOU RICHARD et Fanus Ludovic
+Le code source du projet se trouve sur ce [Dépôt](https://github.com/krxdow/M1/tree/master/Architectures%20Logicielles%20Distribu%C3%A9es/RMI/cabinetVet)  
+Un Diagrame [UML]()
 
-# Instruction Compilation et Lancement 
 
+# Instruction Compilation et Lancement
 Simplement, récupérer les fichiers .jar dans le dossier cabinet et exécuter comme ci-dessous
 ````shell
 java -jar server.jar
