@@ -41,7 +41,7 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
                 int entree = 99;
                 do {
                     System.out.println("1: Lancer en CLI");
-                    System.out.println("2: Lancer en GUI");
+//                    System.out.println("2: Lancer en GUI");
                     System.out.println("0: Arret immediat");
                     System.out.print(">  ");
                     Scanner scanner = new Scanner(System.in);
@@ -115,25 +115,46 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
                                     case 2:
                                         int opSuccess = 1;
                                         String retry = "";
+                                        String name ="";
+                                        String nameMaster ="";
+                                        String specieName = "";
+                                        String followUp ="";
                                         do {
 
                                             Scanner info = new Scanner(System.in);
                                             System.out.println("VOUS ETES EN TRAIN D'AJOUTER UN PATIENT\n\n");
                                             System.out.println("Veuillez renseigner les informations de l'animal patient: ");
-                                            System.out.print("Nom du patient: ");
-                                            String name = info.nextLine();
-                                            System.out.print("Nom du Maitre ou Maitresse du patient: ");
-                                            String nameMaster = info.nextLine();
-                                            System.out.print("Espece du patient: ");
-                                            String specieName = info.nextLine();
-                                            System.out.print("Duree de vie moyen selon l'espece (en chiffre entier, en ANNEES): ");
+                                            do {
+                                                System.out.print("Nom du patient: ");
+                                                String name = info.nextLine();
+                                                if (name == "") System.out.println("Le nom du patient ne peut pas être vide.");
+                                            } while (name == "");
+
+                                            do {
+                                                System.out.print("Nom du Maître ou Maîtresse du patient: ");
+                                                String nameMaster = info.nextLine();
+                                                if (nameMaster=="") System.out.println("Le nom du maître ne peut pas être vide.");
+                                            } while (nameMaster =="" );
+
+                                            do {
+                                                System.out.print("Espèce du patient : ");
+                                                String specieName = info.nextLine();
+                                                if (specieName == "") System.out.println("L'espece du patient ne peut pas être vide.");
+                                            } while (specieName == "");
+
+
+                                            System.out.print("Durée de vie moyenne selon l'espèce (en chiffre entier, en ANNEES): ");
                                             String specieAvgLi = info.nextLine();
                                             int speciesAverageLife = specieAvgLi == "" ? -99 : Integer.parseInt(specieAvgLi);
                                             System.out.print("Race du patient: ");
                                             String race = info.nextLine();
-                                            System.out.println("\nDossier de Suivi du patient");
-                                            System.out.println("Une description de l'etat de suivi du patient: ");
-                                            String followUp = info.nextLine();
+                                            do {
+                                                System.out.println("\nDossier de Suivi du patient");
+                                                System.out.println("Une description de l'état de suivi du patient: ");
+                                                String followUp = info.nextLine();
+                                                if (followUp=="") System.out.println("Le dossier du patient ne peut pas être vide.");
+                                            } while (followUp == "");
+
 
 //                                            IAnimal newPatient = null;
 //
@@ -147,20 +168,21 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
                                             int insert = cabinet.addPatient(name, nameMaster, specieName, speciesAverageLife, race, followUp);
                                             if (insert == -2) {
                                                 opSuccess = -2;
-                                                System.out.println("Nous avons deja un tel patient de nom " + name + " ayant pour maitre(sse) " + nameMaster);
+                                                System.out.println("Nous avons déjà un tel patient de nom " + name + " ayant pour maitre(sse) " + nameMaster);
                                                 do {
                                                     Scanner rep1 = new Scanner(System.in);
 
-                                                    System.out.println("Voulez-vous reesayer l'ajout? (O)ui/(N)on: ");
+                                                    System.out.println("Voulez-vous réesayer l'ajout? (O)ui/(N)on: ");
                                                     retry = rep1.nextLine();
 //                                                    System.out.println("conditon retry1: "+(retry.trim().toUpperCase() != "oui".toUpperCase()));
 //                                                    System.out.println("conditon retry2: "+(retry.trim().toUpperCase() != "o".toUpperCase()));
 //                                                    System.out.println("conditon retry3: "+(retry.trim().toUpperCase() != "non".toUpperCase()));
 //                                                    System.out.println("conditon retry4: "+(retry.trim().toUpperCase() != "n".toUpperCase()));
-                                                    System.out.println("conditon retry General: " + (retry.trim().toUpperCase() != "oui".toUpperCase() &&
-                                                            retry.trim().toUpperCase() != "o".toUpperCase() &&
-                                                            retry.trim().toUpperCase() != "non".toUpperCase() &&
-                                                            retry.trim().toUpperCase() != "n".toUpperCase()));
+     //                                               System.out.println("conditon retry General: " + (retry.trim().toUpperCase() != "oui".toUpperCase() &&
+                                                     //       retry.trim().toUpperCase() != "o".toUpperCase() &&
+                                                       //     retry.trim().toUpperCase() != "non".toUpperCase() &&
+                                                         //   retry.trim().toUpperCase() != "n".toUpperCase()));
+
                                                 } while (!retry.trim().toUpperCase().equals("oui".toUpperCase()) &&
                                                         !retry.trim().toUpperCase().equals("o".toUpperCase()) &&
                                                         !retry.trim().toUpperCase().equals("non".toUpperCase()) &&
@@ -173,12 +195,14 @@ public class Client extends UnicastRemoteObject implements IDistributedClient {
                                                 System.out.println("Une erreur s'est produite lors de l'ajout de patient");
                                                 do {
                                                     Scanner rep1 = new Scanner(System.in);
+                                                    if (retry.trim().toUpperCase() != "non".toUpperCase() || retry.trim().toUpperCase() != "n".toUpperCase()) break;
                                                     System.out.println("Voulez-vous reesayer l'ajout? (O)ui/(N)on: ");
                                                     retry = rep1.nextLine();
+
                                                 } while (retry.trim().toUpperCase().toUpperCase() != "oui".toUpperCase().toUpperCase() || retry.trim().toUpperCase() != "non".toUpperCase() || retry.trim().toUpperCase() != "n".toUpperCase() || retry.trim().toUpperCase() != "o".toUpperCase());
                                             } else {
                                                 opSuccess = 0;
-                                                System.out.println("Patient Enregistre'");
+                                                System.out.println("Patient Enregistré");
                                             }
                                         } while ((opSuccess == -1 || opSuccess == -2) && (retry.trim().toUpperCase() != "oui".toUpperCase() || retry.trim().toUpperCase() != "o".toUpperCase()));
                                         break;

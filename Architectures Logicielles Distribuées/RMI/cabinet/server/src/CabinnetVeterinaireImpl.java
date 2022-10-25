@@ -87,15 +87,15 @@ public class CabinnetVeterinaireImpl extends UnicastRemoteObject implements ICab
             patients.add(newPateint);
             int threshold = this.patients.size();
             switch (threshold) {
-                case 1:
+                case 100:
                     sendAlert(1);
                     System.err.println("Le seuil est a 100 patients");
                     break;
-                case 3:
+                case 500:
                     sendAlert(500);
                     System.err.println("Le seuil est passe' a 100 patients");
                     break;
-                case 5:
+                case 1000:
                     sendAlert(1000);
                     System.err.println("Le nouveau seuil est a 1000 patients");
                     break;
