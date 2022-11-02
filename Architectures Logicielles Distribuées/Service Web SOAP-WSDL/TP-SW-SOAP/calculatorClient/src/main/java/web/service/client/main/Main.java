@@ -24,6 +24,7 @@ public class Main {
 
    int a = 10 ; int b = 12;
    System.out.println(a+" + "+b+" = "+proxy.add(a,b));
+   System.out.println(a+" - "+b+" = "+proxy.subtract(a,b));
 
   }catch (MalformedURLException exception){
    exception.printStackTrace();
