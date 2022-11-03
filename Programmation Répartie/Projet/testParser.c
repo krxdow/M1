@@ -23,8 +23,7 @@ alloc_line(char** restrict pline, size_t* restrict plsize, size_t newsize) {
 }
 
 // implement POSIX getline() with fgets()
-static ssize_t
-getline1(char** restrict pline, size_t* restrict plsize, FILE* restrict fp) {
+static ssize_t getline1(char** restrict pline, size_t* restrict plsize, FILE* restrict fp) {
     //if (*plsize < 128) if (alloc_line(pline, plsize, 128)) return -1;
     if (*plsize < 2) if (alloc_line(pline, plsize, 2)) return -1;
     if (*pline == NULL) return -1;
@@ -64,6 +63,57 @@ getline2(char** restrict pline, size_t* restrict plsize, FILE* restrict fp) {
     return len;
 }
 
+// return position of sub string and store verticesValue and edgeValue
+ssize_t  scearchDef(char * def,FILE* fp,int *verticesPtr,int *edgesPtr){
+
+    char* line = NULL;
+    size_t linesize = 0;
+    ssize_t len = 0; // getline return
+    size_t n = 0;
+
+    int vertices, edges;
+
+    while ((len = getline1(&line, &linesize, fp)) != -1) {
+        // printf("%5zu: %s", ++n, line);
+        // printf("%zu:\n", len);
+
+
+        char *pch = strstr(line, def);
+
+        if (pch){
+            //  printf("%5zu: %s", ++n, line);
+
+            //first token
+            char * strToken = strtok ( line, " ");
+
+            //skip edge word
+            strtok(NULL," ");
+
+
+            sscanf(strtok(NULL," "),"%d",&vertices);
+            sscanf(strtok(NULL," "),"%d",&edges);
+
+
+          // printf("function %d %d\n",vertices,edges);
+
+            *verticesPtr=vertices;
+            *edgesPtr=edges;
+
+
+            //printf("value ptr %d %d\n",verticesPtr,edgesPtr);
+            break;
+        }else if (pch=NULL)
+            printf("\ndefinition du graphe non trouvé");
+    }
+
+    if (errno != ENOMEM) free(line);
+    fclose(fp);
+
+
+
+}
+
+
 // example
 int main(int argc, char** argv) {
 
@@ -75,31 +125,16 @@ int main(int argc, char** argv) {
     for (int i = 1; i < argc; i++) {
         FILE* fp = fopen(argv[i], "r");
         if (fp == NULL) continue;
-        char* line = NULL;
-        size_t linesize = 0;
-        ssize_t len = 0;
-        size_t n = 0;
-        while ((len = getline1(&line, &linesize, fp)) != -1) {
-           // printf("%5zu: %s", ++n, line);
-           // printf("%zu:\n", len);
-            char *pch = strstr(line, definition);
-            if (pch){
-                //printf("%5zu: %s", ++n, line);
 
-                char * strToken = strtok ( line, " ");
 
-                while ( strToken != NULL ) {
-                    printf ( "%s\n", strToken );
-                    // On demande le token suivant.
-                    strToken = strtok ( NULL, " " );
-                }
 
-                break;
-            }
+        int verticesValue;
+        int  edgesValue;
 
-        }
-        if (errno != ENOMEM) free(line);
-        fclose(fp);
+        scearchDef(definition,fp,&verticesValue,&edgesValue);
+        printf("value vertices %d\nvalue edges %d \n",verticesValue,edgesValue);
+
+
     }
     return 0;
 }

@@ -1,4 +1,5 @@
 /*
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -88,18 +89,6 @@ void printGraph(struct Graph* graph)
 // Directed graph implementation in C
 int main(int argc,char **argv)
 {
-    char *line = NULL;
-    ssize_t read;
-    FILE *file = fopen(argv[1],"r");
-    size_t len = 0;
-    char *definition="p edge ";
-
-
-    while (!feof(file)){
-        fscanf(file,"%s",definition)
-
-    }
-
 
     // input array containing edges of the graph (as per the above diagram)
     // (x, y) pair in the array represents an edge from x to y
@@ -124,4 +113,6 @@ int main(int argc,char **argv)
 
 
     return 0;
-}*/
+}
+
+*/
