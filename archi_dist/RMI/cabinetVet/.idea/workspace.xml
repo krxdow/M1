@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0d8fe203-e936-479f-97ca-bab484a1a6ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../cabinet/common/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Architectures Logicielles Distribuées/RMI/cabinetVet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Architectures Logicielles Distribuées/RMI/cabinetVet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/client/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/client/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/client/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/client/client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/client/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/client/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/common/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/common/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/common/common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/common/out/production/common/common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/common/out/production/server/security.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/common/out/production/server/server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/common/src/Espece.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/common/src/Espece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/common/src/IAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/common/src/IAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/common/src/ICabinetVeterinaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/common/src/ICabinetVeterinaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/common/src/IDistributedClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/common/src/IDistributedClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/common/src/IEspece.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/common/src/IEspece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/common/src/common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/server/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/server/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/server/server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/server/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/server/src/CabinnetVeterinaireImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/server/src/CabinnetVeterinaireImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/server/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/server/src/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/server/src/SuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/SuiviAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/server/src/security.policy" beforeDir="false" afterPath="$PROJECT_DIR$/../cabinet/server/src/security.policy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cabinet/server/src/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Architectures Logicielles Distribuées/RMI/cabinetVet/.idea/cabinetVet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cabinetVet.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ludow.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/richard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/ICabinetVeterinaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/ICabinetVeterinaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/IDistributedClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/IDistributedClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/security.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/RMI/RMI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/RMI/cabinet vétérinaire.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/RMI/cabinetVet/cabinet vétérinaire.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/RMI/helloWorld/helloWorld.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2GSN0IcAeqZERvu866wOLeEUkLu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/richard/Documents/master-info/compilation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="cabinetVet" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="cabinetVet" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d8fe203-e936-479f-97ca-bab484a1a6ce" name="Changes" comment="" />
+      <created>1666377800488</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666377800488</updated>
+      <workItem from="1666377801570" duration="48000" />
+      <workItem from="1666378062987" duration="1467000" />
+      <workItem from="1666379887683" duration="1762000" />
+      <workItem from="1666383735594" duration="3268000" />
+      <workItem from="1666522042054" duration="1886000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

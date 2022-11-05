@@ -1,3 +1,8 @@
+// TP RENDU PAR 
+// LUDOVIC FANUS et
+// AMAH GNIMDOU RICHARD
+
+
 // UPP.java
 
 import java.util.*;
@@ -84,7 +89,7 @@ class UPPGVar extends UPPExpr {
 
     RTLInst toRTL (ArrayList<Pair<String,PRegister>> locals,
                    ArrayList<String> globals, PRegister reg, RTLInst succ) {
-                    return succ;  // Not Sure
+                    return new RTLSetGVar(name, reg, succ);  
         //To do
     }//toRTL
 
