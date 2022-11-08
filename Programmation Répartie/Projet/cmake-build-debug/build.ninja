@@ -51,13 +51,25 @@ build cmake_object_order_depends_target_Projet: phony || CMakeFiles/Projet.dir
 
 build CMakeFiles/Projet.dir/main.c.o: C_COMPILER__Projet_Debug /home/ludow/Documents/GitHub/M1/Programmation$ Répartie/Projet/main.c || cmake_object_order_depends_target_Projet
   DEP_FILE = CMakeFiles/Projet.dir/main.c.o.d
-  FLAGS = -g -std=gnu11
+  FLAGS = -pthread -g -std=gnu11
   OBJECT_DIR = CMakeFiles/Projet.dir
   OBJECT_FILE_DIR = CMakeFiles/Projet.dir
 
 build CMakeFiles/Projet.dir/testParser.c.o: C_COMPILER__Projet_Debug /home/ludow/Documents/GitHub/M1/Programmation$ Répartie/Projet/testParser.c || cmake_object_order_depends_target_Projet
   DEP_FILE = CMakeFiles/Projet.dir/testParser.c.o.d
-  FLAGS = -g -std=gnu11
+  FLAGS = -pthread -g -std=gnu11
+  OBJECT_DIR = CMakeFiles/Projet.dir
+  OBJECT_FILE_DIR = CMakeFiles/Projet.dir
+
+build CMakeFiles/Projet.dir/testThreadSocket.c.o: C_COMPILER__Projet_Debug /home/ludow/Documents/GitHub/M1/Programmation$ Répartie/Projet/cmake-build-debug/testThreadSocket.c || cmake_object_order_depends_target_Projet
+  DEP_FILE = CMakeFiles/Projet.dir/testThreadSocket.c.o.d
+  FLAGS = -pthread -g -std=gnu11
+  OBJECT_DIR = CMakeFiles/Projet.dir
+  OBJECT_FILE_DIR = CMakeFiles/Projet.dir
+
+build CMakeFiles/Projet.dir/SocketClientServer.c.o: C_COMPILER__Projet_Debug /home/ludow/Documents/GitHub/M1/Programmation$ Répartie/Projet/SocketClientServer.c || cmake_object_order_depends_target_Projet
+  DEP_FILE = CMakeFiles/Projet.dir/SocketClientServer.c.o.d
+  FLAGS = -pthread -g -std=gnu11
   OBJECT_DIR = CMakeFiles/Projet.dir
   OBJECT_FILE_DIR = CMakeFiles/Projet.dir
 
@@ -69,8 +81,8 @@ build CMakeFiles/Projet.dir/testParser.c.o: C_COMPILER__Projet_Debug /home/ludow
 #############################################
 # Link the executable Projet
 
-build Projet: C_EXECUTABLE_LINKER__Projet_Debug CMakeFiles/Projet.dir/main.c.o CMakeFiles/Projet.dir/testParser.c.o
-  FLAGS = -g
+build Projet: C_EXECUTABLE_LINKER__Projet_Debug CMakeFiles/Projet.dir/main.c.o CMakeFiles/Projet.dir/testParser.c.o CMakeFiles/Projet.dir/testThreadSocket.c.o CMakeFiles/Projet.dir/SocketClientServer.c.o
+  FLAGS = -pthread -g
   OBJECT_DIR = CMakeFiles/Projet.dir
   POST_BUILD = :
   PRE_LINK = :
