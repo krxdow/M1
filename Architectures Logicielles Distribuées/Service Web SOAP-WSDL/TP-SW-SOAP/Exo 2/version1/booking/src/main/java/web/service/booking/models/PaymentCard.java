@@ -8,7 +8,7 @@ public class PaymentCard {
     public PaymentCard() {
     }
 
-    public PaymentCard(String cardNumber) throws InvalidCardNumberException {
+    public PaymentCard(String cardNumber)  {
         this.cardNumber = cardNumber;
     }
 

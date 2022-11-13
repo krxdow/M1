@@ -2,32 +2,44 @@ package web.service.booking.models;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class Hotel {
+
     private String name;
-    private float stars;
+    private Double stars;
     private String country;
     private String city;
     private String street;
     private int streetNumber;
     private String gpsPosition;
-
     private List<Room> hotelRooms;
+
+
+    public Hotel() {
+    }
+
+    public Hotel(String name, Double stars, String city, String street, int streetNumber) {
+        this.name = name;
+        this.stars = stars;
+        this.city = city;
+        this.street = street;
+        this.streetNumber = streetNumber;
+//        this.hotelRooms = hotelRooms;
+    }
+
 
     public String getName() {
         return this.name;
     }
-
-    public void setName(String name) {
+    public   void setName(String name) {
         this.name = name;
     }
 
-    public float getStars() {
+    public double getStars() {
         return this.stars;
     }
 
-    public void setStars(float stars) {
+    public void setStars(double stars) {
         this.stars = stars;
     }
 
@@ -70,36 +82,30 @@ public class Hotel {
     public void setGpsPosition(String gpsPosition) {
         this.gpsPosition = gpsPosition;
     }
-
-//    public Hotel(String name, float stars, String country, String city, String street, int streetNumber) {
-//        this.name = name;
-//        this.stars = stars;
-//        this.country = country;
-//        this.city = city;
-//        this.street = street;
-//        this.streetNumber = streetNumber;
+//    public String getName() {
+//        return this.name;
 //    }
 
-
-    public Hotel() {
+    public List<Room> getAllRoom() {
+        return this.allRoom;
     }
 
-    public Hotel(String name, float stars, String country, String city, String street, int streetNumber, String gpsPosition, List<Room> hotelRooms) {
-        this.name = name;
-        this.stars = stars;
-        this.country = country;
-        this.city = city;
-        this.street = street;
-        this.streetNumber = streetNumber;
-        this.gpsPosition = gpsPosition;
-        this.hotelRooms = hotelRooms;
+    public List<Room> getAvailalbleRooms() {
+        return availalbleRooms;
     }
 
-    List<Room> allRoom = new ArrayList<Room>();
+  public   List<Room> allRoom = new ArrayList<Room>();
+
+
+
     List<Booking> bookings = new ArrayList<Booking>();
-List<Room> availalbleRooms = new ArrayList<Room>();
+public  List<Room> availalbleRooms = new ArrayList<Room>();
 
-List<Room> getAvailalbleRooms(List<Room> rooms) {
+    public void addRoom(int roomNumber, int numberBed, float price, boolean available) {
+        allRoom.add(new Room(roomNumber, numberBed, price, available));
+    }
+
+    public List<Room> getAvailalbleRooms(List<Room> rooms) {
     List<Room> currentAvailableRooms = new ArrayList<Room>();
     for (Room room : rooms) {
         if (room.isAvailbale()){
@@ -109,9 +115,9 @@ List<Room> getAvailalbleRooms(List<Room> rooms) {
     return currentAvailableRooms;
 }
 
-Float getCurrentHotelMinPrice(List<Room> rooms) {
-    float currentHotelRoomMinPrice = rooms.get(1).getPrice();
-    float currentHotelRoomMaxPrice = rooms.get(1).getPrice();
+double getCurrentHotelMinPrice(List<Room> rooms) {
+    double currentHotelRoomMinPrice = rooms.get(1).getPrice();
+    double currentHotelRoomMaxPrice = rooms.get(1).getPrice();
     for (Room room : rooms) {
         if (currentHotelRoomMinPrice> room.getPrice()){
            currentHotelRoomMinPrice = room.getPrice();
@@ -120,8 +126,8 @@ Float getCurrentHotelMinPrice(List<Room> rooms) {
     return currentHotelRoomMinPrice;
 }
 
-    Float getHotelMinMaxPrice(List<Room> rooms) {
-        float currentHotelRoomMaxPrice = rooms.get(1).getPrice();
+    public double getHotelMinMaxPrice(List<Room> rooms) {
+        double currentHotelRoomMaxPrice = rooms.get(1).getPrice();
         for (Room room : rooms) {
             if (currentHotelRoomMaxPrice < room.getPrice()){
                 currentHotelRoomMaxPrice = room.getPrice();
@@ -130,12 +136,12 @@ Float getCurrentHotelMinPrice(List<Room> rooms) {
         return currentHotelRoomMaxPrice;
     }
 
+
+
 //public List<Room> suggestRoomAvailable() {
 ////    Optional<Room> suggestedRooms =
 //}
 public  boolean receiveBooking() {
     return true;
 }
-
-
 }

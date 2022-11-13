@@ -3,13 +3,14 @@ package web.service.booking.models;
 public class Room {
     private int roomNumber;
     private int numberBed;
-    private float price;
+    private double price;
     private boolean availbale;
 
     public Room() {
     }
 
-    public Room(int roomNumber, int numberBed, float price, boolean availbale) {
+    public Room(int roomNumber, int numberBed, double price, boolean availbale) {
+
         this.roomNumber = roomNumber;
         this.numberBed = numberBed;
         this.price = price;
@@ -39,13 +40,11 @@ public int getRoomNumber() {
     public void setNumberBed(int numberBed) {
         this.numberBed = numberBed;
     }
-
-    public float getPrice() {
+    public double getPrice() {
         return this.price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         this.price = price;
     }
-
 }
