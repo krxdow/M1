@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a65313da-e6f5-450e-87ee-8307ef42bdfe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Exo 1/ClientReservation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Readm.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/service/booking/models/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/service/booking/models/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/service/booking/server/PubliserServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/service/booking/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/.gitrepo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/.gitrepo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/artifacts/client_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/artifacts/client_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/artifacts/server_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/artifacts/server_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/cabinet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/cabinet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/DrawIOUML.desktop" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/DrawIOUML.desktop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/DépotGithub.desktop" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/DépotGithub.desktop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/TP1_RMI.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/TP1_RMI.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/ToDO.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/ToDO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/UML.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/UML.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/client.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/client.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/client/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/client/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/client/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/client/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/client/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/client/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/client/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/client/client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/client/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/client/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/client/src/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/client/src/Gui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/client/src/src.plantuml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/client/src/src.plantuml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/common/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/common/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/common/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/common/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/common/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/common/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/common/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/common/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/common/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/common/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/common/common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/common/src/Espece.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/common/src/Espece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/common/src/IAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/common/src/IAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/common/src/ICabinetVeterinaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/common/src/ICabinetVeterinaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/common/src/IDistributedClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/common/src/IDistributedClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/common/src/IEspece.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/common/src/IEspece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/common/src/ISuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/common/src/ISuiviAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/common/src/src.plantuml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/common/src/src.plantuml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/CabinnetVeterinaireImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/CabinnetVeterinaireImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/Espece.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/Espece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/IAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/IAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/ICabinetVeterinaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/ICabinetVeterinaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/IDistributedClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/IDistributedClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/IEspece.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/IEspece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/ISuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/ISuiviAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/SuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/SuiviAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/diagrame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/diagrame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/diagrame.plantuml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/diagrame.plantuml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/security.policy" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/diagrame/security.policy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/misc/Screenshot_20221017_132338.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/misc/Screenshot_20221017_132338.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/misc/Screenshot_20221017_144018.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/misc/Screenshot_20221017_144018.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/client/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/client/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/common/Espece.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/common/Espece.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/common/IAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/common/IAnimal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/common/ICabinetVeterinaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/common/ICabinetVeterinaire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/common/IDistributedClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/common/IDistributedClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/common/IEspece.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/common/IEspece.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/common/ISuiviAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/common/ISuiviAnimal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/common/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/common/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/server/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/server/Animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/server/CabinnetVeterinaireImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/server/CabinnetVeterinaireImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/server/SuiviAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/server/SuiviAnimal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/server/security.policy" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/out/production/server/security.policy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/server.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/server.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/server/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/server/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/server/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/server/server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/server/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/server/src/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/server/src/CabinnetVeterinaireImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/server/src/CabinnetVeterinaireImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/server/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/server/src/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/server/src/SuiviAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/server/src/SuiviAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/server/src/security.policy" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/server/src/security.policy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RMI/cabinet/server/src/src.plantuml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RMI/cabinet/server/src/src.plantuml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/.idea/artifacts/calculatorClient_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/.idea/artifacts/calculatorClient_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/.idea/artifacts/calculatorClient_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/.idea/artifacts/calculatorClient_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/TODO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/misc/Screenshot_20221101_183919.png" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/misc/Screenshot_20221101_183919.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/misc/blank" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/misc/blank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Add.class" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Add.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/AddResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/AddResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/AddResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/AddResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/CalculatorSoap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/CalculatorSoap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/CalculatorSoap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/CalculatorSoap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Divide.class" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Divide.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Divide.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Divide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/DivideResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/DivideResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/DivideResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/DivideResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Multiply.class" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Multiply.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Multiply.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Multiply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/MultiplyResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/MultiplyResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/MultiplyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/MultiplyResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/ObjectFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/ObjectFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/ObjectFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Subtract.class" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Subtract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Subtract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/Subtract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/SubtractResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/SubtractResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/SubtractResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/SubtractResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/calculator.asmx" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/calculator.asmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/calculator1.asmx" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/calculator1.asmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/package-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/package-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculatorClient/src/main/java/web/service/client/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/.gitrepo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/.gitrepo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Doc_HMIN_104_CC_Exam_12_Jan_2021.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Doc_HMIN_104_CC_Exam_12_Jan_2021.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/DéposCompilation.desktop" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/DéposCompilation.desktop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/PP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/PP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/RTL.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/RTL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/Rendu PP vers UPP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/Rendu PP vers UPP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/UPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/UPP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Array.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Array.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Bool.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Bool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Callee.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Callee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Int.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Int.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Label.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Label.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPAdd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPAnd.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPAnd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPArrayAlloc.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPArrayAlloc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPArrayGet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPArrayGet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPArraySet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPArraySet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPAssign.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPAssign.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPBinOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPBinOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPCond.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPCond.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPCte.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPCte.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPDiv.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPDiv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPEq.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPEq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPExpr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPFalse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPFalse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPFun.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPFun.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPFunCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPFunCall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPGe.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPGe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPGt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPGt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPInst.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPInst.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPInv.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPInv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPLe.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPLe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPLt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPLt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPMul.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPMul.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPNe.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPNe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPNot.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPNot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPOr.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPOr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPProc.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPProc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPProcCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPProcCall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPProg.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPProg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPSeq.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPSeq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPSkip.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPSkip.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPSub.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPSub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPTrue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPTrue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPUnOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPUnOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPVar.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPVar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPWhile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PPWhile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/PRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLAdd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLAnd.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLAnd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLBinBranch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLBinBranch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLBinOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLBinOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLCall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLCte.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLCte.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLDiv.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLDiv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLEnd.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLEnd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLEq.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLEq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLFun.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLFun.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLFunCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLFunCall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLGe.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLGe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLGetGVar.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLGetGVar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLGt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLGt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLGtz.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLGtz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLInst.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLInst.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLLe.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLLe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLLoad.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLLoad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLLt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLLt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLMove.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLMul.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLMul.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLNe.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLNe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLOr.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLOr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLProc.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLProc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLProcCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLProcCall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLProg.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLProg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLSetGVar.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLSetGVar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLSub.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLSub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLUnBranch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLUnBranch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLUnOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLUnOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLVar.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLVar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLXOri.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/RTLXOri.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Read.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Read.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Rendu PP vers UPP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Rendu PP vers UPP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/UPPCte.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/UPPCte.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/UPPDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/UPPDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/UPPExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/UPPExpr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/UPPInst.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/UPPInst.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/UPPProg.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/UPPProg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Write.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/Write.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/pp-upp-rtl-tp.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/out/production/Rendu PP vers UPP/pp-upp-rtl-tp.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/pp-upp-rtl-tp.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/Rendu PP vers UPP/pp-upp-rtl-tp.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/SujetCompilation.desktop" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/SujetCompilation.desktop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/SujetCompilation.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/SujetCompilation.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/SujetCompilation2.desktop" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/SujetCompilation2.desktop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/.idea/libraries/antlr_4_11_1_complete.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/.idea/libraries/antlr_4_11_1_complete.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/PP.g4" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/PP.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/PP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/PP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/lib/antlr-4.11.1-complete.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/AVEC AST/lib/antlr-4.11.1-complete.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/SANS AST/PP.g4" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/SANS AST/PP.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/antlr-tp.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/TP analyse syntaxique/TP ANTLR/antlr-tp.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/cours/antlr.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/cours/antlr.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/cours/intro.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/cours/intro.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/cours/mips.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/cours/mips.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/cours/pp-upp-rtl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/cours/pp-upp-rtl.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/rendu PP vers UPP UPP vers RTL.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/rendu PP vers UPP UPP vers RTL.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/rendu PP vers UPP UPP vers RTL/PP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/rendu PP vers UPP UPP vers RTL/PP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/rendu PP vers UPP UPP vers RTL/UPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/rendu PP vers UPP UPP vers RTL/UPP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/repo (2).desktop" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/repo (2).desktop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/repo(1).desktop" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/repo(1).desktop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Compilation/repo.desktop" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Compilation/repo.desktop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Faculte-des-Sciences-2022-rond-fond.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Faculte-des-Sciences-2022-rond-fond.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Multiplexage des entrées ⁄ sorties/.gitrepo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Multiplexage des entrées ⁄ sorties/.gitrepo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Multiplexage des entrées ⁄ sorties/CM-Multiplexage-IO.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Multiplexage des entrées ⁄ sorties/CM-Multiplexage-IO.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Programmation multi-threads/CM-MulriThreads.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Programmation multi-threads/CM-MulriThreads.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Programmation multi-threads/TD-TP/.gitrepo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Programmation multi-threads/TD-TP/.gitrepo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Programmation multi-threads/TD-TP/exo1.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Programmation multi-threads/TD-TP/exo1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Programmation multi-threads/TD-TP/exo2.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Programmation multi-threads/TD-TP/exo2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Programmation multi-threads/TD-TP/exo3.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Programmation multi-threads/TD-TP/exo3.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Programmation multi-threads/TD-TP/sujetTPThreads.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Programmation multi-threads/TD-TP/sujetTPThreads.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/.gitrepo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/.gitrepo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/.idea/Projet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/.idea/Projet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/query/cache-v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/reply/cache-v2-437231550fe22ea58063.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/reply/cache-v2-437231550fe22ea58063.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-0f3cbf78e97f2a1058f0.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-0f3cbf78e97f2a1058f0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-fbff2a4a2bffc0aaa38a.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-fbff2a4a2bffc0aaa38a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-03T01-46-10-0874.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-03T01-46-10-0874.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/reply/target-Projet-Debug-23e57d42343629a338c1.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/reply/target-Projet-Debug-23e57d42343629a338c1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-8cabd8cda47a6a3892f1.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-8cabd8cda47a6a3892f1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/3.23.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/3.23.2/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/Projet.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/Projet.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/Projet.dir/testParser.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/Projet.dir/testParser.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/testParser.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/testParser.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/touchfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Projet/touchfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/Cours/cmTCPIP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/Cours/cmTCPIP.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/PremiersPasTCPIP/TP-TCP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/PremiersPasTCPIP/TP-TCP.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/PremiersPasTCPIP/fichiers-Exo1-TCP.tgz" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/PremiersPasTCPIP/fichiers-Exo1-TCP.tgz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/TP-TCP-suite.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/TP-TCP-suite.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fournis/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fournis/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fournis/.idea/fournis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fournis/.idea/fournis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fournis/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fournis/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fournis/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fournis/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fournis/client.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fournis/client.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fournis/serveur.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/SériesExercicesL3/TCPIPAvancé/fournis/serveur.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/TD-TP/.gitrepo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/TD-TP/.gitrepo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/TD-TP/TDTP-resaux.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Programmation Répartie/Réseaux - Sockets TCP ⁄ IP/TD-TP/TDTP-resaux.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UM_LOGO_original_RVB_WEB.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UM_LOGO_original_RVB_WEB.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../archi_dist/RMI/cabinet/client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../archi_dist/RMI/cabinet/client/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../archi_dist/RMI/cabinet/client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../archi_dist/RMI/cabinet/client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../archi_dist/RMI/cabinet/common/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../archi_dist/RMI/cabinet/common/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../archi_dist/RMI/cabinet/common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../archi_dist/RMI/cabinet/common/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../archi_dist/RMI/cabinet/server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../archi_dist/RMI/cabinet/server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../archi_dist/RMI/cabinetVet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../archi_dist/RMI/cabinetVet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../archi_dist/RMI/relocqte/server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../archi_dist/RMI/relocqte/server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../archi_dist/RMI/server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../archi_dist/RMI/server/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2HRtbOrYpLtzcg2ShBMyCOosfLS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="web.service.booking.exceptions" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a65313da-e6f5-450e-87ee-8307ef42bdfe" name="Changes" comment="" />
+      <created>1668259796750</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668259796750</updated>
+      <workItem from="1668259798007" duration="10402000" />
+      <workItem from="1668286829275" duration="6179000" />
+      <workItem from="1668296704109" duration="2604000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
