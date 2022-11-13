@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/TP-SW-SOAP.iml" filepath="$PROJECT_DIR$/.idea/TP-SW-SOAP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calculatorClient/calculatorClient.iml" filepath="$PROJECT_DIR$/calculatorClient/calculatorClient.iml" />
+    </modules>
+  </component>
+</project>
