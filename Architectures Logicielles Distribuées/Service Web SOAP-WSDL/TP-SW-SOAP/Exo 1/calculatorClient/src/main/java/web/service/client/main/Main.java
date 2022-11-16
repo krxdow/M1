@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Main  {
 
     public static void main(String[] args) throws MalformedURLException {
-        int intrfcChoice = 0;
+
         Scanner scanner = new Scanner(System.in);
         new GUI();
     }

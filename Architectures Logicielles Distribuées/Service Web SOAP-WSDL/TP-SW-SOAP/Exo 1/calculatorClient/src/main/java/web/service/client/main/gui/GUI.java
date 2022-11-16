@@ -56,7 +56,7 @@ public class GUI extends JFrame {
         displayLabel.setBackground(Color.WHITE);
         GraphicsDevice device = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
         int posWith = (device.getDisplayMode().getWidth() / 2) - (FRAME_WIDTH/2);
-        int posHeight = (device.getDisplayMode().getHeight()/ 2) - (FRAME_WIDTH/2);
+        int posHeight = (device.getDisplayMode().getHeight()/ 2) - (FRAME_HEIGHT/2);
         alert.setForeground(Color.RED);
         super.setLocation(posWith, posHeight);
 
