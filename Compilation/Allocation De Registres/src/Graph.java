@@ -15,14 +15,14 @@ import java.util.ListIterator;
 
 
  class GraphColorException extends GraphException{
-    public GraphColorException() {}
+
     public GraphColorException(String message) {super(message);}
 }
 
 
  class InvalidColorException extends GraphColorException
  {
-    public InvalidColorException() {}
+
     public InvalidColorException(String message) {super(message);}
 }
 
@@ -30,20 +30,14 @@ import java.util.ListIterator;
 
     @Override
     public int compare(Node o1, Node o2) {
-        if (o1.getColor() < o2.getColor())
-            return -1;
-        else if(o1.getColor() == o2.getColor())
-            return 0;
-        else return 1;
+        return Integer.compare(o1.getColor(), o2.getColor());
     }}
  class NotColorableException extends GraphColorException{
-    public NotColorableException() {}
+
     public NotColorableException(String message) {super(message);}
 }
 
 class GraphException extends Exception {
-    public GraphException() {
-    }
 
     public GraphException(String message) {
         super(message);
@@ -51,54 +45,51 @@ class GraphException extends Exception {
 }
 
 class EdgesNotFoundException extends GraphException{
-    public EdgesNotFoundException() {}
+
     public EdgesNotFoundException(String message) {super(message);}
 }
  class NodeNotFoundException extends GraphException{
-    public NodeNotFoundException() {}
+
     public NodeNotFoundException(String message) {super(message);}
 }
 
- class NegativeOrNullColorException extends GraphColorException{
-    public NegativeOrNullColorException() {}
-    public NegativeOrNullColorException(String message) {super(message);}
-}
+
 
 
 
 
 public class Graph implements Cloneable{
     /*attributes*/
-    private ArrayList<Node> sommets;
-    private ArrayList<Edges> aretes;
-    private Deque<Spilled> spilled = new ArrayDeque<Spilled>();
+    private ArrayList<Node> nodes;
+    private ArrayList<Edges> edges;
+    private Deque<Spilled> spilled = new ArrayDeque<>();
 
     /*constructors*/
     public Graph(){
-        sommets = new ArrayList<Node>();
-        aretes = new ArrayList<Edges>();
+        nodes = new ArrayList<Node>();
+        edges = new ArrayList<Edges>();
     }
 
-    public Graph(ArrayList<Node> sommets){
-        this.sommets = sommets;
-        aretes = new ArrayList<Edges>();
+    public Graph(ArrayList<Node> nodes){
+        this.nodes = nodes;
+        edges = new ArrayList<Edges>();
     }
 
-    public Graph(ArrayList<Node> sommets, ArrayList<Edges> aretes){
-        this.sommets = sommets;
-        this.aretes = aretes;
+    public Graph(ArrayList<Node> nodes, ArrayList<Edges> edges){
+        this.nodes = nodes;
+        this.edges = edges;
     }
 
     /*methods*/
     //getters
-    public ArrayList<Node> getNodes(){return sommets;}
-    public ArrayList<Edges> getEdgess(){return aretes;}
+    public ArrayList<Node> getNodes(){return nodes;}
+    public ArrayList<Edges> getEdgess(){return edges;}
 
     //toString
     @Override
     public String toString(){
-        return "Nodes : " + this.sommets.toString() +
-                "\nArêtes : " + this.aretes.toString() +
+        return "Nodes : " + this.nodes.toString() +
+                "\nArêtes : " + this.edges.toString() +
                 "\nSpillés : " + this.spilled.toString();
     }
 
@@ -108,13 +99,13 @@ public class Graph implements Cloneable{
         Object obj = super.clone();
         Graph clonedGraph = (Graph)obj;
 
-        clonedGraph.sommets = new ArrayList<Node>();
-        clonedGraph.sommets.addAll(this.sommets);
+        clonedGraph.nodes = new ArrayList<>();
+        clonedGraph.nodes.addAll(this.nodes);
 
-        clonedGraph.aretes = new ArrayList<Edges>();
-        clonedGraph.aretes.addAll(this.aretes);
+        clonedGraph.edges = new ArrayList<>();
+        clonedGraph.edges.addAll(this.edges);
 
-        clonedGraph.spilled = new ArrayDeque<Spilled>();
+        clonedGraph.spilled = new ArrayDeque<>();
         clonedGraph.spilled.addAll(this.spilled);
 
         return clonedGraph;
@@ -123,53 +114,53 @@ public class Graph implements Cloneable{
     //other methods
 
     public int ordre() {
-        return this.sommets.size();
+        return this.nodes.size();
     }
 
 
     public int taille(){
-        return this.aretes.size();
+        return this.edges.size();
     }
 
-    public boolean isNode(Node sommet) {
-        return this.sommets.contains(sommet);
+    public boolean isNode(Node node) {
+        return this.nodes.contains(node);
     }
 
 
     public boolean isEdges(Edges arete) {
-        return this.aretes.contains(arete);
+        return this.edges.contains(arete);
     }
 
 
-    public boolean isSpilled(Node sommet) {
+    public boolean isSpilled(Node node) {
         for (Spilled s : this.spilled)
-            if(s.getNode().equals(sommet))
+            if(s.getNode().equals(node))
                 return true;
         return false;
     }
 
-    public void supprimerNode(Node sommet)
+    public void supprimerNode(Node node)
             throws NodeNotFoundException{
-        if(!this.isNode(sommet))
-            throw new NodeNotFoundException("Erreur : le sommet "
-                    + sommet + " n'est pas un sommet du graphe");
+        if(!this.isNode(node))
+            throw new NodeNotFoundException("Erreur : le node "
+                    + node + " n'est pas un node du graphe");
         else
-            this.sommets.remove(sommet);
+            this.nodes.remove(node);
     }
 
 
-    public void supprimerEdges(Edges arete)
+    public void supprimerEdges(Edges edge)
             throws EdgesNotFoundException{
-        if(!this.isEdges(arete))
+        if(!this.isEdges(edge))
             throw new EdgesNotFoundException("Erreur : l'arête "
-                    + arete + " n'est pas une arête du graphe");
+                    + edge + " n'est pas une arête du graphe");
         else
-            this.aretes.remove(arete);
+            this.edges.remove(edge);
     }
 
 
-    private void empileSpilled(Node sommet){
-        this.spilled.push(new Spilled(sommet));
+    private void empileSpilled(Node node){
+        this.spilled.push(new Spilled(node));
     }
 
 
@@ -178,15 +169,15 @@ public class Graph implements Cloneable{
     }
 
 
-    public int degre(Node sommet)
+    public int degre(Node node)
             throws NodeNotFoundException{
-        if (!this.isNode(sommet))
-            throw new NodeNotFoundException("Erreur : le sommet "
-                    + sommet + " n'est pas un sommet du graphe");
+        if (!this.isNode(node))
+            throw new NodeNotFoundException("Erreur : le node "
+                    + node + " n'est pas un sommet du graphe");
 
         int deg = 0;
-        for (Edges arete : aretes){
-            if (arete.isIncidente(sommet))
+        for (Edges arete : edges){
+            if (arete.isIncidente(node))
                 deg++;
         }
 
@@ -196,7 +187,7 @@ public class Graph implements Cloneable{
 
     private int minDegre() {
         return Collections.min(
-                sommets
+                nodes
                         .stream()
                         .map(s -> {
                             try {
@@ -205,14 +196,13 @@ public class Graph implements Cloneable{
                                 e.printStackTrace();
                             }
                             return null;
-                        })
-                        .collect(Collectors.toList()));
+                        }).toList());
     }
 
 
     private int maxDegre() {
         return Collections.max(
-                sommets
+                nodes
                         .stream()
                         .map(s -> {
                             try {
@@ -221,28 +211,27 @@ public class Graph implements Cloneable{
                                 e.printStackTrace();
                             }
                             return null;
-                        })
-                        .collect(Collectors.toList()));
+                        }).toList());
     }
 
 
     public void trierNodesParCouleur() {
-        Collections.sort(this.sommets, new ComparatorNodeParCouleur());
+        Collections.sort(this.nodes, new ComparatorNodeParCouleur());
     }
 
 
-    public void trierNodesParCouleur(ArrayList<Node> sommets) {
-        Collections.sort(sommets, new ComparatorNodeParCouleur());
+    public void trierNodesParCouleur(ArrayList<Node> nodes) {
+        Collections.sort(nodes, new ComparatorNodeParCouleur());
     }
 
 
-    public ArrayList<Node> voisins(Node sommet){
+    public ArrayList<Node> voisins(Node node){
         ArrayList<Node> voisins = new ArrayList<>();
-        for (Edges arete : this.aretes) {
-            if (arete.getFirst().equals(sommet))
-                voisins.add(arete.getSecond());
-            else if(arete.getSecond().equals(sommet))
-                voisins.add(arete.getFirst());
+        for (Edges edge : this.edges) {
+            if (edge.getFirst().equals(node))
+                voisins.add(edge.getSecond());
+            else if(edge.getSecond().equals(node))
+                voisins.add(edge.getFirst());
         }
 
         this.trierNodesParCouleur(voisins);
@@ -257,58 +246,45 @@ public class Graph implements Cloneable{
             throw new EdgesNotFoundException("Erreur : l'arête "
                     + arete + " n'est pas une arête du graphe");
 
-        for (Node sommet : this.sommets)
-            if(arete.isIncidente(sommet))
-                sommetsIncidents.add(sommet);
+        for (Node node : this.nodes)
+            if(arete.isIncidente(node))
+                sommetsIncidents.add(node);
         return sommetsIncidents;
     }
 
-    /**
-     * renvoie la liste des arêtes incidentes au sommet sommet
-     * @param sommet le sommet dont les arêtes incidentes on souhaite récupérer
-     * @return la liste des arêtes incidentes à sommet
-     * @throws NodeNotFoundException si le sommet n'est pas un sommet du graphe
-     */
-    private ArrayList<Edges> aretesIncidentes(Node sommet)
+
+    private ArrayList<Edges> aretesIncidentes(Node node)
             throws NodeNotFoundException{
-        if (!this.isNode(sommet))
+        if (!this.isNode(node))
             throw new NodeNotFoundException("Erreur : le sommet "
-                    + sommet + " n'est pas un sommet du graphe");
+                    + node + " n'est pas un sommet du graphe");
         ArrayList<Edges> incidentes = new ArrayList<>();
-        for (Edges arete : this.aretes)
-            if(arete.isIncidente(sommet))
+        for (Edges arete : this.edges)
+            if(arete.isIncidente(node))
                 incidentes.add(arete);
         return incidentes;
     }
 
-    /**
-     * supprime les arêtes incidentes au sommet "sommet" dans le graphe
-     * @param sommet le sommet dont les arêtes incidentes sont à supprimer
-     * @throws NodeNotFoundException si le sommet n'est pas un sommet du graphe
-     */
-    private void supprimerEdgessIncidentes(Node sommet)
-            throws NodeNotFoundException{
-        if (!this.isNode(sommet))
-            throw new NodeNotFoundException("Erreur : le sommet "
-                    + sommet + " n'est pas un sommet du graphe");
 
-        ListIterator<Edges> iter = aretes.listIterator();
-        while(iter.hasNext()){
-            if (iter.next().isIncidente(sommet))
-                iter.remove();
-        }
+    private void supprimerEdgessIncidentes(Node node)
+            throws NodeNotFoundException{
+        if (!this.isNode(node))
+            throw new NodeNotFoundException("Erreur : le sommet "
+                    + node + " n'est pas un sommet du graphe");
+
+        edges.removeIf(edges1 -> edges1.isIncidente(node));
     }
 
 
-    public boolean estTrivialColorable(Node sommet, int k)
+    public boolean estTrivialColorable(Node node, int k)
             throws NodeNotFoundException,
             InvalidColorException{
         if (k <= 0)
             throw new InvalidColorException("Erreur : " + k
                     + " n'est pas un nombre de couleurs valide");
 
-        if (this.isNode(sommet) && this.degre(sommet) < k &&
-                !sommet.isColored() && this.degre(sommet) == this.minDegre())
+        if (this.isNode(node) && this.degre(node) < k &&
+                !node.isColored() && this.degre(node) == this.minDegre())
             return true;
         return false;
     }
@@ -317,54 +293,54 @@ public class Graph implements Cloneable{
     public Node trivialColorable(int k)
             throws InvalidColorException,
             NodeNotFoundException{
-        for (Node sommet : this.sommets)
-            if(estTrivialColorable(sommet, k))
-                return sommet;
+        for (Node node : this.nodes)
+            if(estTrivialColorable(node, k))
+                return node;
         return null;
     }
 
 
     public Node spilled()
             throws NodeNotFoundException {
-        for (Node sommet : this.sommets)
-            if(this.degre(sommet) == this.maxDegre())
-                return sommet;
+        for (Node node : this.nodes)
+            if(this.degre(node) == this.maxDegre())
+                return node;
         return null;
     }
 
 
-    private void attribueCouleur(Node sommet, ArrayList<Edges> incidentes, int k)
+    private void attribueCouleur(Node node, ArrayList<Edges> incidentes, int k)
             throws NodeNotFoundException,
             GraphColorException{
-        if (!this.isNode(sommet))
+        if (!this.isNode(node))
             throw new NodeNotFoundException("Erreur : le sommet"
-                    + sommet + " n'est pas un sommet du graphe");
+                    + node + " n'est pas un node du graphe");
 
         if (k <= 0)
             throw new InvalidColorException("Erreur : " + k
                     + " n'est pas un nombre de couleurs valide");
 
-        if (sommet.isColored())
+        if (node.isColored())
             return;
 
-        if (!this.isSpilled(sommet))
-            this.aretes.addAll(this.colorerEdgessIncidentesSaufNode(incidentes, sommet));
+        if (!this.isSpilled(node))
+            this.edges.addAll(this.colorerEdgessIncidentesSaufNode(incidentes, node));
 
-        if (this.voisins(sommet).size() == 0)
-            sommet.setColor(1);
+        if (this.voisins(node).size() == 0)
+            node.setColor(1);
         else {
             int couleur;
-            for (Node voisin : this.voisins(sommet)) {
-                if (!sommet.isColored())
+            for (Node voisin : this.voisins(node)) {
+                if (!node.isColored())
                     couleur = 1;
                 else
-                    couleur = sommet.getColor();
+                    couleur = node.getColor();
                 while(couleur <= k && couleur == voisin.getColor())
                     couleur++;
                 if (couleur > k) {
-                    if (this.isSpilled(sommet)) {
-                        sommet.setColor(Node.COULEUR_DEFAUT);
-                        System.err.println("Erreur : le sommet " + sommet + " spillé n'est pas "
+                    if (this.isSpilled(node)) {
+                        node.setColor(Node.COULEUR_DEFAUT);
+                        System.err.println("Erreur : le sommet " + node + " spillé n'est pas "
                                 + "coloriable avec " + k + " couleurs en coloriage optimiste");
                         break;
                     }
@@ -372,9 +348,9 @@ public class Graph implements Cloneable{
                         throw new NotColorableException("Erreur : le graphe n'est pas " + k + "-coloriable");
                 }
                 else
-                    sommet.setColor(couleur);
+                    node.setColor(couleur);
             }
-            this.aretes = this.colorerEdgessIncidentesNode(this.aretes, sommet);
+            this.edges = this.colorerEdgessIncidentesNode(this.edges, node);
         }
     }
 
@@ -397,35 +373,35 @@ public class Graph implements Cloneable{
                     + " n'est pas un nombre de couleurs valide");
 
         if(this.ordre() == 1) {
-            this.attribueCouleur(this.sommets.get(0), null, k);
+            this.attribueCouleur(this.nodes.get(0), null, k);
             return this;
         }
 
         Graph graphe = (Graph)this.clone();
-        Node sommet = this.trivialColorable(k);
-        if (sommet != null){
-            graphe.supprimerEdgessIncidentes(sommet);
-            graphe.supprimerNode(sommet);
+        Node node = this.trivialColorable(k);
+        if (node != null){
+            graphe.supprimerEdgessIncidentes(node);
+            graphe.supprimerNode(node);
 
             graphe = graphe.colorier(k);
 
-            if(!graphe.isNode(sommet))
-                graphe.sommets.add(sommet);
+            if(!graphe.isNode(node))
+                graphe.nodes.add(node);
 
-            ArrayList<Edges> incidentes = this.aretesIncidentes(sommet);
-            graphe.attribueCouleur(sommet, incidentes, k);
+            ArrayList<Edges> incidentes = this.aretesIncidentes(node);
+            graphe.attribueCouleur(node, incidentes, k);
         }
         else {
-            sommet = this.spilled();
-            graphe.empileSpilled(sommet);
-            graphe.supprimerEdgessIncidentes(sommet);
-            graphe.supprimerNode(sommet);
+            node = this.spilled();
+            graphe.empileSpilled(node);
+            graphe.supprimerEdgessIncidentes(node);
+            graphe.supprimerNode(node);
 
             graphe = graphe.colorier(k);
 
-            ArrayList<Edges> incidentes = this.aretesIncidentes(sommet);
+            ArrayList<Edges> incidentes = this.aretesIncidentes(node);
             graphe.spilled.peek().getEdges().addAll(
-                    graphe.colorerEdgessIncidentesSaufNode(incidentes, sommet));
+                    graphe.colorerEdgessIncidentesSaufNode(incidentes, node));
 
         }
         return graphe;
@@ -435,8 +411,8 @@ public class Graph implements Cloneable{
             throws NodeNotFoundException,
             GraphColorException {
         for (Spilled s : this.spilled) {
-            this.sommets.add(s.getNode());
-            this.aretes.addAll(s.getEdges());
+            this.nodes.add(s.getNode());
+            this.edges.addAll(s.getEdges());
         }
 
         for (Spilled s : this.spilled)
@@ -449,18 +425,18 @@ public class Graph implements Cloneable{
     }
 
 
-    private ArrayList<Edges> colorerEdgessIncidentesNode(ArrayList<Edges> aretes, Node sommet){
+    private ArrayList<Edges> colorerEdgessIncidentesNode(ArrayList<Edges> edges, Node node){
         ArrayList<Edges> colores = new ArrayList<>();
-        for (Edges arete : aretes) {
-            if(arete.getFirst().getValue().equals(sommet.getValue()))
+        for (Edges arete : edges) {
+            if(arete.getFirst().getValue().equals(node.getValue()))
                 colores.add(new Edges(
                         new Node(
-                                sommet.getValue(), sommet.getColor()),
+                                node.getValue(), node.getColor()),
                         arete.getSecond()));
-            else if (arete.getSecond().getValue().equals(sommet.getValue()))
+            else if (arete.getSecond().getValue().equals(node.getValue()))
                 colores.add(new Edges(
                         arete.getFirst(),
-                        new Node(sommet.getValue(), sommet.getColor())));
+                        new Node(node.getValue(), node.getColor())));
             else if(arete.isColored())
                 colores.add(arete);
         }
@@ -468,21 +444,21 @@ public class Graph implements Cloneable{
         return colores;
     }
 
-    private ArrayList<Edges> colorerEdgessIncidentes(ArrayList<Edges> aretes){
+    private ArrayList<Edges> colorerEdgessIncidentes(ArrayList<Edges> edges){
         ArrayList<Edges> in = new ArrayList<>();
 
-        for (Node vertex : this.sommets)
-            in.addAll(this.colorerEdgessIncidentesNode(aretes, vertex));
+        for (Node vertex : this.nodes)
+            in.addAll(this.colorerEdgessIncidentesNode(edges, vertex));
 
         return in;
     }
 
-    private ArrayList<Edges> colorerEdgessIncidentesSaufNode(ArrayList<Edges> aretes, Node sommet) {
+    private ArrayList<Edges> colorerEdgessIncidentesSaufNode(ArrayList<Edges> edges, Node node) {
         ArrayList<Edges> in = new ArrayList<>();
 
-        for (Node vertex : this.sommets)
-            if (!vertex.equals(sommet))
-                in.addAll(this.colorerEdgessIncidentesNode(aretes, vertex));
+        for (Node vertex : this.nodes)
+            if (!vertex.equals(node))
+                in.addAll(this.colorerEdgessIncidentesNode(edges, vertex));
 
         return in;
     }

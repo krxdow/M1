@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Allocation De Registres:jar">
+    <output-path>$PROJECT_DIR$/</output-path>
+    <root id="archive" name="Allocation De Registres.jar">
+      <element id="module-output" name="Allocation De Registres" />
+    </root>
+  </artifact>
+</component>
